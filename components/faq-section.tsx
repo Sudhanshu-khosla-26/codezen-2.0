@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Card } from "@/components/ui/card"
-import { ChevronDown } from "lucide-react"
+import { useState } from "react";
+import { Card } from "@/components/ui/card";
+import { ChevronDown } from "lucide-react";
 
 export default function FaqSection() {
-  const [expanded, setExpanded] = useState<number | null>(0)
+  const [expanded, setExpanded] = useState<number | null>(0);
 
   const faqs = [
     {
@@ -32,18 +32,20 @@ export default function FaqSection() {
       q: "Can I submit previous projects?",
       a: "No, all projects must be created during the hackathon event.",
     },
-  ]
+  ];
 
   return (
     <section className="container mx-auto px-4 py-16 md:py-20">
       <div className="text-center mb-10 md:mb-12">
         <h2
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-glow text-balance"
-          style={{ fontFamily: "monospace" }}
+          style={{ fontFamily: "Stranger Things, sans-serif" }}
         >
           FAQ
         </h2>
-        <p className="text-xs md:text-sm lg:text-base text-muted-foreground">Frequently Asked Questions</p>
+        <p className="text-xs md:text-sm lg:text-base text-muted-foreground">
+          Frequently Asked Questions
+        </p>
       </div>
 
       <div className="max-w-3xl mx-auto space-y-2 md:space-y-4">
@@ -55,7 +57,9 @@ export default function FaqSection() {
             onClick={() => setExpanded(expanded === i ? null : i)}
           >
             <div className="p-4 md:p-6 flex items-center justify-between gap-4">
-              <h3 className="font-bold text-sm md:text-lg text-card-foreground text-balance">{faq.q}</h3>
+              <h3 className="font-bold text-sm md:text-lg text-card-foreground text-balance">
+                {faq.q}
+              </h3>
               <ChevronDown
                 className={`h-4 md:h-5 w-4 md:w-5 text-primary transition-transform duration-300 flex-shrink-0 ${
                   expanded === i ? "rotate-180" : ""
@@ -71,5 +75,5 @@ export default function FaqSection() {
         ))}
       </div>
     </section>
-  )
+  );
 }

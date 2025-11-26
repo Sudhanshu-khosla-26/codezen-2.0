@@ -1,19 +1,34 @@
-"use client"
+"use client";
 
-import { Card } from "@/components/ui/card"
-import { Trophy, Award } from "lucide-react"
+import { Card } from "@/components/ui/card";
+import { Trophy, Award } from "lucide-react";
 
 export default function PrizesSection() {
   const mainPrizes = [
-    { place: "1st Place", amount: "₹15,000", icon: Trophy, color: "text-primary" },
-    { place: "2nd Place", amount: "₹11,000", icon: Award, color: "text-primary" },
-    { place: "3rd Place", amount: "₹7,000", icon: Award, color: "text-primary" },
-  ]
+    {
+      place: "1st Place",
+      amount: "₹15,000",
+      icon: Trophy,
+      color: "text-primary",
+    },
+    {
+      place: "2nd Place",
+      amount: "₹11,000",
+      icon: Award,
+      color: "text-primary",
+    },
+    {
+      place: "3rd Place",
+      amount: "₹7,000",
+      icon: Award,
+      color: "text-primary",
+    },
+  ];
 
   const specialPrizes = [
     { category: "All-Girls Team", amount: "₹5,000" },
     { category: "Beginner Team", amount: "₹5,000" },
-  ]
+  ];
 
   const rewards = [
     "💻 GitHub Copilot Access",
@@ -22,18 +37,20 @@ export default function PrizesSection() {
     "💼 Internship Opportunities",
     "📜 Certificates of Merit",
     "🤝 Networking & Mentorship",
-  ]
+  ];
 
   return (
     <section className="container mx-auto px-4 py-16 md:py-20">
       <div className="text-center mb-10 md:mb-12">
         <h2
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-glow flicker text-balance"
-          style={{ fontFamily: "monospace" }}
+          style={{ fontFamily: "Stranger Things, sans-serif" }}
         >
           PRIZES
         </h2>
-        <p className="text-xs md:text-sm lg:text-base text-muted-foreground">Rewards worth escaping for</p>
+        <p className="text-xs md:text-sm lg:text-base text-muted-foreground">
+          Rewards worth escaping for
+        </p>
       </div>
 
       {/* Main Prizes */}
@@ -46,10 +63,16 @@ export default function PrizesSection() {
             } transition-all duration-300 hover-lift animate-slide-in-up`}
             style={{ animationDelay: `${i * 0.1}s` }}
           >
-            <prize.icon className={`h-10 md:h-16 w-10 md:w-16 mx-auto ${prize.color}`} />
+            <prize.icon
+              className={`h-10 md:h-16 w-10 md:w-16 mx-auto ${prize.color}`}
+            />
             <div>
-              <h3 className="text-xl md:text-3xl font-bold text-card-foreground text-balance">{prize.place}</h3>
-              <p className="text-2xl md:text-4xl font-bold text-primary mt-2">{prize.amount}</p>
+              <h3 className="text-xl md:text-3xl font-bold text-card-foreground text-balance">
+                {prize.place}
+              </h3>
+              <p className="text-2xl md:text-4xl font-bold text-primary mt-2">
+                {prize.amount}
+              </p>
             </div>
           </Card>
         ))}
@@ -63,15 +86,21 @@ export default function PrizesSection() {
             className="glass-effect p-4 md:p-6 border-primary/30 hover-scale-bright text-center transition-all animate-scale-in"
             style={{ animationDelay: `${i * 0.1}s` }}
           >
-            <h3 className="text-sm md:text-lg font-bold text-card-foreground text-balance">{prize.category}</h3>
-            <p className="text-lg md:text-2xl font-bold text-primary mt-2">{prize.amount}</p>
+            <h3 className="text-sm md:text-lg font-bold text-card-foreground text-balance">
+              {prize.category}
+            </h3>
+            <p className="text-lg md:text-2xl font-bold text-primary mt-2">
+              {prize.amount}
+            </p>
           </Card>
         ))}
       </div>
 
       {/* Other Rewards */}
       <div className="max-w-3xl mx-auto">
-        <h3 className="text-lg md:text-2xl font-bold text-center mb-4 md:mb-6 text-primary">Other Rewards</h3>
+        <h3 className="text-lg md:text-2xl font-bold text-center mb-4 md:mb-6 text-primary">
+          Other Rewards
+        </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4">
           {rewards.map((reward, i) => (
             <Card
@@ -85,5 +114,5 @@ export default function PrizesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

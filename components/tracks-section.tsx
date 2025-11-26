@@ -1,13 +1,22 @@
-"use client"
+"use client";
 
-import { Card } from "@/components/ui/card"
-import { Code, Zap, Code2, Lightbulb, Leaf, Heart, Eye, Network } from "lucide-react"
+import { Card } from "@/components/ui/card";
+import {
+  Code,
+  Zap,
+  Code2,
+  Lightbulb,
+  Leaf,
+  Heart,
+  Eye,
+  Network,
+} from "lucide-react";
 
 export default function TracksSection() {
   const sponsoredTracks = [
     { icon: Zap, title: "Duality AI Space", desc: "AI/ML Innovation" },
     { icon: Code2, title: "Pathways", desc: "Web Development" },
-  ]
+  ];
 
   const regularTracks = [
     { icon: Zap, title: "AI", desc: "Artificial Intelligence" },
@@ -18,18 +27,20 @@ export default function TracksSection() {
     { icon: Leaf, title: "Climate Tech", desc: "Environmental Solutions" },
     { icon: Heart, title: "Health Tech", desc: "Healthcare Innovation" },
     { icon: Eye, title: "AR/VR", desc: "Extended Reality" },
-  ]
+  ];
 
   return (
     <section className="container mx-auto px-4 py-16 md:py-20">
       <div className="text-center mb-10 md:mb-12">
         <h2
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-glow text-balance"
-          style={{ fontFamily: "monospace" }}
+          style={{ fontFamily: "Stranger Things, sans-serif" }}
         >
           TRACKS
         </h2>
-        <p className="text-xs md:text-sm lg:text-base text-muted-foreground">Choose your path through the darkness</p>
+        <p className="text-xs md:text-sm lg:text-base text-muted-foreground">
+          Choose your path through the darkness
+        </p>
       </div>
 
       {/* Sponsored Tracks */}
@@ -45,8 +56,12 @@ export default function TracksSection() {
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               <track.icon className="h-12 md:h-16 w-12 md:w-16 text-primary mx-auto" />
-              <h3 className="font-bold text-lg md:text-2xl text-card-foreground text-balance">{track.title}</h3>
-              <p className="text-xs md:text-sm text-muted-foreground text-balance">{track.desc}</p>
+              <h3 className="font-bold text-lg md:text-2xl text-card-foreground text-balance">
+                {track.title}
+              </h3>
+              <p className="text-xs md:text-sm text-muted-foreground text-balance">
+                {track.desc}
+              </p>
             </Card>
           ))}
         </div>
@@ -65,12 +80,16 @@ export default function TracksSection() {
               style={{ animationDelay: `${i * 0.05}s` }}
             >
               <track.icon className="h-8 md:h-12 w-8 md:w-12 text-primary mx-auto" />
-              <h3 className="font-bold text-sm md:text-lg text-card-foreground text-balance">{track.title}</h3>
-              <p className="text-xs md:text-sm text-muted-foreground text-balance">{track.desc}</p>
+              <h3 className="font-bold text-sm md:text-lg text-card-foreground text-balance">
+                {track.title}
+              </h3>
+              <p className="text-xs md:text-sm text-muted-foreground text-balance">
+                {track.desc}
+              </p>
             </Card>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

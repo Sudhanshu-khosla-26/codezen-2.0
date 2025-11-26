@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Users, Code, ChevronDown } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Users, Code, ChevronDown } from "lucide-react";
 
 export default function HeroSection() {
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    element?.scrollIntoView({ behavior: "smooth" })
-  }
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="container mx-auto px-4 pt-32 pb-20 md:pt-40 md:pb-32">
@@ -21,13 +21,14 @@ export default function HeroSection() {
 
         <h1
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-glow flicker tracking-wider animate-scale-in text-balance"
-          style={{ fontFamily: "monospace" }}
+          style={{ fontFamily: "Stranger Things, sans-serif" }}
         >
-          CODEZEN 2
+          CODEZEN
         </h1>
 
         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto font-sans animate-slide-in-up text-balance">
-          36-Hour Offline Hackathon Experience • February 20-21, 2025 • Delhi, India
+          36-Hour Offline Hackathon Experience • February 20-21, 2025 • Delhi,
+          India
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center pt-6 md:pt-8">
@@ -56,5 +57,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

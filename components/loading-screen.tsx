@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
 export default function LoadingScreen() {
-  const [progress, setProgress] = useState(0)
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prev) => {
-        if (prev >= 90) return prev
-        return prev + Math.random() * 30
-      })
-    }, 200)
+        if (prev >= 90) return prev;
+        return prev + Math.random() * 30;
+      });
+    }, 200);
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="fixed inset-0 bg-background flex items-center justify-center overflow-hidden z-50">
@@ -27,7 +27,9 @@ export default function LoadingScreen() {
             style={{
               width: `${Math.random() * 100 + 20}px`,
               height: `${Math.random() * 100 + 20}px`,
-              backgroundColor: `rgba(220, 20, 60, ${Math.random() * 0.1 + 0.05})`,
+              backgroundColor: `rgba(220, 20, 60, ${
+                Math.random() * 0.1 + 0.05
+              })`,
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animation: `pulse ${Math.random() * 3 + 2}s ease-in-out infinite`,
@@ -42,7 +44,7 @@ export default function LoadingScreen() {
         <div className="mb-8 md:mb-12">
           <h1
             className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-glow flicker text-balance"
-            style={{ fontFamily: "monospace" }}
+            style={{ fontFamily: "Stranger Things, sans-serif" }}
           >
             CODEZEN
           </h1>
@@ -75,19 +77,29 @@ export default function LoadingScreen() {
             }}
           />
         </div>
-        <p className="text-muted-foreground mt-3 md:mt-4 text-xs md:text-sm">{Math.round(progress)}%</p>
+        <p className="text-muted-foreground mt-3 md:mt-4 text-xs md:text-sm">
+          {Math.round(progress)}%
+        </p>
 
         {/* Flashing text */}
         <div className="mt-8 md:mt-12 space-y-1 md:space-y-2">
-          <p className="text-primary text-xs md:text-sm animate-pulse">████ CONNECTING ████</p>
-          <p className="text-accent text-xs md:text-sm animate-pulse" style={{ animationDelay: "0.3s" }}>
+          <p className="text-primary text-xs md:text-sm animate-pulse">
+            ████ CONNECTING ████
+          </p>
+          <p
+            className="text-accent text-xs md:text-sm animate-pulse"
+            style={{ animationDelay: "0.3s" }}
+          >
             ██ LOADING DIMENSIONS ██
           </p>
-          <p className="text-primary text-xs md:text-sm animate-pulse" style={{ animationDelay: "0.6s" }}>
+          <p
+            className="text-primary text-xs md:text-sm animate-pulse"
+            style={{ animationDelay: "0.6s" }}
+          >
             ████████ READY ████████
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,26 +1,26 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Navbar from "@/components/navbar"
-import LoadingScreen from "@/components/loading-screen"
-import HeroSection from "@/components/hero-section"
-import EventDetails from "@/components/event-details"
-import TracksSection from "@/components/tracks-section"
-import PrizesSection from "@/components/prizes-section"
-import StatsSection from "@/components/stats-section"
-import FaqSection from "@/components/faq-section"
-import FooterSection from "@/components/footer-section"
+import { useState, useEffect } from "react";
+import Navbar from "@/components/navbar";
+import LoadingScreen from "@/components/loading-screen";
+import HeroSection from "@/components/hero-section";
+import EventDetails from "@/components/event-details";
+import TracksSection from "@/components/tracks-section";
+import PrizesSection from "@/components/prizes-section";
+import StatsSection from "@/components/stats-section";
+import FaqSection from "@/components/faq-section";
+import FooterSection from "@/components/footer-section";
 
 export default function CodeZenPage() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 3000)
-    return () => clearTimeout(timer)
-  }, [])
+    const timer = setTimeout(() => setIsLoading(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   if (isLoading) {
-    return <LoadingScreen />
+    return <LoadingScreen />;
   }
 
   return (
@@ -31,17 +31,17 @@ export default function CodeZenPage() {
 
       {/* Floating particles effect */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(150)].map((_, i) => {
-          const size = Math.random() * 4 + 0.5
-          const duration = 8 + Math.random() * 15
-          const delay = Math.random() * 8
+        {[...Array(500)].map((_, i) => {
+          const size = Math.random() * 4 + 0.5;
+          const duration = 8 + Math.random() * 15;
+          const delay = Math.random() * 8;
           const colors = [
             "rgba(220, 20, 60, 0.8)",
             "rgba(139, 0, 0, 0.6)",
             "rgba(255, 0, 0, 0.4)",
             "rgba(178, 34, 34, 0.5)",
             "rgba(255, 20, 147, 0.3)",
-          ]
+          ];
 
           return (
             <div
@@ -50,16 +50,19 @@ export default function CodeZenPage() {
               style={{
                 width: `${size}px`,
                 height: `${size}px`,
-                backgroundColor: colors[Math.floor(Math.random() * colors.length)],
+                backgroundColor:
+                  colors[Math.floor(Math.random() * colors.length)],
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
                 animationDelay: `${delay}s`,
                 animationDuration: `${duration}s`,
                 filter: `blur(${Math.random() * 1}px)`,
-                boxShadow: `0 0 ${5 + Math.random() * 5}px rgba(220, 20, 60, 0.6)`,
+                boxShadow: `0 0 ${
+                  5 + Math.random() * 5
+                }px rgba(220, 20, 60, 0.6)`,
               }}
             />
-          )
+          );
         })}
       </div>
 
@@ -85,5 +88,5 @@ export default function CodeZenPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }

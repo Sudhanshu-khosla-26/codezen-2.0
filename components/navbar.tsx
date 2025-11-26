@@ -1,24 +1,28 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    element?.scrollIntoView({ behavior: "smooth" })
-    setIsOpen(false)
-  }
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false);
+  };
 
   const navItems = [
-    { label: "Tracks", id: "tracks" },
-    { label: "Prizes", id: "prizes" },
+    { label: "HOME", id: "home" },
+    { label: "ABOUT", id: "about" },
+    { label: "TRACKS", id: "tracks" },
+    { label: "TIMELINE", id: "timeline" },
+    { label: "PRIZES", id: "prizes" },
+    { label: "TEAM", id: "team" },
     { label: "FAQ", id: "faq" },
-    { label: "Contact", id: "contact" },
-  ]
+    // { label: "CONTACT", id: "contact" },
+  ];
 
   return (
     <nav className="fixed top-0 w-full z-50 glass-effect border-b border-primary/20">
@@ -29,9 +33,13 @@ export default function Navbar() {
           onClick={() => scrollToSection("hero")}
         >
           <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">CZ</span>
+            <span className="text-primary-foreground font-bold text-sm">
+              CZ
+            </span>
           </div>
-          <span className="font-bold text-lg hidden sm:inline text-foreground">CodeZen</span>
+          <span className="font-bold text-lg hidden sm:inline text-foreground">
+            CodeZen
+          </span>
         </div>
 
         {/* Desktop Menu */}
@@ -40,7 +48,7 @@ export default function Navbar() {
             <Button
               key={item.id}
               variant="ghost"
-              className="text-foreground hover:text-primary hover:bg-primary/10 transition-all"
+              className="text-foreground  hover:bg-primary/5 transition-all"
               onClick={() => scrollToSection(item.id)}
             >
               {item.label}
@@ -58,7 +66,12 @@ export default function Navbar() {
           </Button>
 
           {/* Mobile Menu Toggle */}
-          <Button variant="ghost" size="icon" className="md:hidden text-foreground" onClick={() => setIsOpen(!isOpen)}>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden text-foreground"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
@@ -88,5 +101,5 @@ export default function Navbar() {
         </div>
       )}
     </nav>
-  )
+  );
 }
