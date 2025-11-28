@@ -10,6 +10,7 @@ import PrizesSection from "@/components/prizes-section";
 import StatsSection from "@/components/stats-section";
 import FaqSection from "@/components/faq-section";
 import FooterSection from "@/components/footer-section";
+import TimelineSection from "@/components/timeline-section";
 
 export default function CodeZenPage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -74,6 +75,9 @@ export default function CodeZenPage() {
         </div>
         <EventDetails />
         <StatsSection />
+        <div id="timeline">
+          <TimelineSection />
+        </div>
         <div id="tracks">
           <TracksSection />
         </div>
