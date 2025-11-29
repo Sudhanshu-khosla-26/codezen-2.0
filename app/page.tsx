@@ -10,6 +10,10 @@ import PrizesSection from "@/components/prizes-section";
 import StatsSection from "@/components/stats-section";
 import FaqSection from "@/components/faq-section";
 import FooterSection from "@/components/footer-section";
+import TeamSection from "@/components/team-section";
+
+
+
 
 export default function CodeZenPage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -57,9 +61,8 @@ export default function CodeZenPage() {
                 animationDelay: `${delay}s`,
                 animationDuration: `${duration}s`,
                 filter: `blur(${Math.random() * 1}px)`,
-                boxShadow: `0 0 ${
-                  5 + Math.random() * 5
-                }px rgba(220, 20, 60, 0.6)`,
+                boxShadow: `0 0 ${5 + Math.random() * 5
+                  }px rgba(220, 20, 60, 0.6)`,
               }}
             />
           );
@@ -80,6 +83,10 @@ export default function CodeZenPage() {
         <div id="prizes">
           <PrizesSection />
         </div>
+        <div id="team">
+          <TeamSection />
+        </div>
+
         <div id="faq">
           <FaqSection />
         </div>
