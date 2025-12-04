@@ -114,56 +114,6 @@ const teamCategories: TeamCategory[] = [
 //     },
 //   ],
 // },
-
-
-    {
-      name: "SOCIETY MENTORS",
-      icon: <Users className="w-6 h-6" />,
-       
-      members: [
-        {
-          name: "ARPIT RAJPUT",
-          role: "",
-          image: "/team/arpit-rajput.jpg",
-          bio: "",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/arpit-rajput-831393213/",
-            },
-            {
-              platform: "github",
-              url: "https://github.com/ArpitRajputGithub",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/arpitrajput.exe",
-            },
-          ],
-        },
-        {
-          name: "ATHARV TRIPATHI",
-          role: "",
-          image: "/team/atharv-tripathi.jpg",
-          bio: "",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/atharv7740",
-            },
-            {
-              platform: "github",
-              url: "https://github.com/Atharv7740",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/its_atharv_tripathi",
-            },
-          ],
-        },
-      ],
-    },
-
     {
       name: "ORGANISERS",
       icon: <UserCheck className="w-6 h-6" />,
@@ -236,6 +186,89 @@ const teamCategories: TeamCategory[] = [
         // },
       ],
     },
+
+    {
+      name: "SOCIETY MENTORS",
+      icon: <Users className="w-6 h-6" />,
+       
+      members: [
+        {
+          name: "ARPIT RAJPUT",
+          role: "",
+          image: "/team/arpit-rajput.jpg",
+          bio: "",
+          socials: [
+            {
+              platform: "linkedin",
+              url: "https://www.linkedin.com/in/arpit-rajput-831393213/",
+            },
+            {
+              platform: "github",
+              url: "https://github.com/ArpitRajputGithub",
+            },
+            {
+              platform: "instagram",
+              url: "https://www.instagram.com/arpitrajput.exe",
+            },
+          ],
+        },
+        {
+          name: "ATHARV TRIPATHI",
+          role: "",
+          image: "/team/atharv-tripathi.jpg",
+          bio: "",
+          socials: [
+            {
+              platform: "linkedin",
+              url: "https://www.linkedin.com/in/atharv7740",
+            },
+            {
+              platform: "github",
+              url: "https://github.com/Atharv7740",
+            },
+            {
+              platform: "instagram",
+              url: "https://www.instagram.com/its_atharv_tripathi",
+            },
+          ],
+        },
+      ],
+    },
+
+    
+        // {
+        //   name: "ASHISH KUMAR",
+        //   role: "Lead-Organiser",
+        //   image: "/team/ashish-kumar.jpg",
+        //   bio: "Coordinating with partners and stakeholders",
+        //   socials: [
+        //     { platform: "linkedin", url: "" },
+        //     { platform: "github", url: "" },
+        //     { platform: "instagram", url: "" },
+        //   ],
+        // },
+
+        // {
+        //   name: "KANISHQ VERMA",
+        //   role: "Lead-Organiser",
+        //   image: "/team/kanishq-verma.png",
+        //   bio: "Supporting organizational activities",
+        //   socials: [
+        //     {
+        //       platform: "linkedin",
+        //       url: "https://www.linkedin.com/in/kanishq-verma-6a0b6827a/",
+        //     },
+        //     {
+        //       platform: "github",
+        //       url: "https://github.com/KanishqVerma",
+        //     },
+        //     {
+        //       platform: "instagram",
+        //       url: "https://www.instagram.com/__weird.kanishq__",
+        //     },
+        //   ],
+        // },
+
     // {
     //   name: "CO-ORGANISERS",
     //   icon: <Users className="w-6 h-6" />,
@@ -275,33 +308,33 @@ const teamCategories: TeamCategory[] = [
     //     },
     //   ],
     // },
-    {
-      name: "CHIEF MARKETING OFFICER",
-      icon: <Video className="w-6 h-6" />,
+    // {
+    //   name: "CHIEF MARKETING OFFICER",
+    //   icon: <Video className="w-6 h-6" />,
        
-      members: [
-        {
-          name: "KASHVI ARORA",
-          role: "",
-          image: "/team/kashvi.jpg",
-          bio: "",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/kashvi15/",
-            },
-            {
-              platform: "github",
-              url: "https://github.com/Kashvi009",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/kiyraaaaa_/",
-            },
-          ],
-        },
-      ],
-    },
+    //   members: [
+    //     {
+    //       name: "KASHVI ARORA",
+    //       role: "",
+    //       image: "/team/kashvi.jpg",
+    //       bio: "",
+    //       socials: [
+    //         {
+    //           platform: "linkedin",
+    //           url: "https://www.linkedin.com/in/kashvi15/",
+    //         },
+    //         {
+    //           platform: "github",
+    //           url: "https://github.com/Kashvi009",
+    //         },
+    //         {
+    //           platform: "instagram",
+    //           url: "https://www.instagram.com/kiyraaaaa_/",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     // {
     //   name: "CORE TEAM",
     //   icon: <Video className="w-6 h-6" />,
@@ -406,6 +439,35 @@ const teamCategories: TeamCategory[] = [
             },
           ],
         },
+        {
+                name: "AMAN GOEL",
+                role: "Executive",
+                image: "/team/aman-goel.jpg",
+                bio: "Event planning and execution support",
+                socials: [
+                  {
+                    platform: "linkedin",
+                    url: "https://www.linkedin.com/in/aman-goel-56264727b/",
+                  },
+                  { platform: "github", url: "https://github.com/Amangoel22" },
+                ],
+              },
+                                    {
+          name: "DHWANI NAGPAL",
+          role: "Executive",
+          image: "/team/Dhwani Nagpal.jpg",
+          bio: "Managing venue arrangements and coordination",
+          socials: [
+            {
+              platform: "linkedin",
+              url: "https://www.linkedin.com/in/dhwani-nagpal-963730388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            },
+            {
+              platform: "instagram",
+              url: "",
+            },
+          ],
+        },
                 {
           name: "MANYA MADAN",
           role: "Executive",
@@ -422,19 +484,7 @@ const teamCategories: TeamCategory[] = [
             },
           ],
         },
-  {
-          name: "AMAN GOEL",
-          role: "Executive",
-          image: "/team/aman-goel.jpg",
-          bio: "Event planning and execution support",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/aman-goel-56264727b/",
-            },
-            { platform: "github", url: "https://github.com/Amangoel22" },
-          ],
-        },
+
         // {
         //   name: "AYUSHI DUBEY",
         //   role: "Social Media Management",
@@ -534,23 +584,27 @@ const teamCategories: TeamCategory[] = [
       icon: <Video className="w-6 h-6" />,
        
       members: [
-        {
-          name: "YANA MALHOTRA",
+                {
+          name: "ADARSH KUMAR",
           role: "Executive",
-          image: "/team/yana-malhotra.jpg",
-          bio: "Data Structures and Algorithms specialist",
+          image: "/team/Adarsh.jpg",
+          bio: "Coordinating event logistics and operations",
           socials: [
             {
               platform: "linkedin",
-              url: "https://www.linkedin.com/in/yana-malhotra-427b61293",
+              url: "https://www.linkedin.com/in/adarsh-kumar-6221762b4",
             },
             {
               platform: "github",
-              url: "https://github.com/yana-malhotra27",
+              url: "https://github.com/Its-Adarshkumar",
+            },
+            {
+              platform: "instagram",
+              url: "https://www.instagram.com/its_adarshsinghrajput/",
             },
           ],
         },
-        {
+                {
           name: "VRITTI GARG",
           role: "Executive",
           image: "/team/vritti-garg.jpg",
@@ -571,25 +625,23 @@ const teamCategories: TeamCategory[] = [
           ],
         },
         {
-          name: "ADARSH KUMAR",
+          name: "YANA MALHOTRA",
           role: "Executive",
-          image: "/team/Adarsh.jpg",
-          bio: "Coordinating event logistics and operations",
+          image: "/team/yana-malhotra.jpg",
+          bio: "Data Structures and Algorithms specialist",
           socials: [
             {
               platform: "linkedin",
-              url: "https://www.linkedin.com/in/adarsh-kumar-6221762b4",
+              url: "https://www.linkedin.com/in/yana-malhotra-427b61293",
             },
             {
               platform: "github",
-              url: "https://github.com/Its-Adarshkumar",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/its_adarshsinghrajput/",
+              url: "https://github.com/yana-malhotra27",
             },
           ],
         },
+
+
 
 
       ],
@@ -711,7 +763,7 @@ const teamCategories: TeamCategory[] = [
         },
             {
           name: "ARJUN",
-          role: "DSA Co-Lead",
+          role: "DSA Coordinator ",
           image: "/team/arjun-pant.jpg",
           bio: "Event coordination and logistics",
           socials: [
@@ -875,333 +927,86 @@ const teamCategories: TeamCategory[] = [
 
     //   ],
     // },
-    {
-      name: "DESIGN TEAM",
-      icon: <Palette className="w-6 h-6" />,
-          members: [
-        {
-          name: "JAYAN ARORA",
-          role: "Design Lead",
-          image: "/team/Jayaan-Arora.jpg",
-          bio: "UI/UX design and creative development",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/jayan-arora-undefined-0545622b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-        // {
-        //   name: "MUSKAN SINGH",
-        //   role: "Design Lead",
-        //   image: "/team/muskan-singh.jpg",
-        //   bio: "UI/UX design and creative development",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/muskan-s-b75808235",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/muskan._.s2",
-        //     },
-        //   ],
-        // },
-        {
-          name: "ATISHAY",
-          role: "Design Co-Lead",
-          image: "/team/Atishay-Jain.png",
-          bio: "Creative design and visual communication",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-            {
-              platform: "github",
-              url: "",
-            },
-          ],
-        },
-        // {
-        //   name: "ARCHANA GUPTA",
-        //   role: "Design Co-Lead",
-        //   image: "/team/Archana-gupta.jpg",
-        //   bio: "Creative design and visual communication",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/archana-gupta2006",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/archanaaa_15",
-        //     },
-        //     {
-        //       platform: "github",
-        //       url: "https://github.com/Archana15-codes",
-        //     },
-        //   ],
-        // },
-        {
-          name: "MOHAMMAD FAIZ",
-          role: "Design Team",
-          image: "/team/Mohammad Faiz.png",
-          bio: "Creative design and visual storytelling",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/mohammad-faiz-097b45378",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/mohammad_faiz007",
-            },
-          ],
-        },
-        // {
-        //   name: "HARSH YADAV",
-        //   role: "Design Team",
-        //   image: "/team/harsh-yadav.jpg",
-        //   bio: "Creative design and visual storytelling",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/harsh-yadav-5b92b62b1",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/harsh.__.yadavv",
-        //     },
-        //   ],
-        // },
-        {
-          name: "BHAVYA SUNEJA",
-          role: "Design Team",
-          image: "/team/Bhavya-suneja.jpeg",
-          bio: "Creative design and visual storytelling",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/bhavya-suneja/",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-        // {
-        //   name: "SAKSHAM DIDI",
-        //   role: "Design Team",
-        //   image: "/team/saksham.png",
-        //   bio: "Creative design and visual storytelling",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/saksham-didi-23b2b2239",
-        //     },
-        //     {
-        //       platform: "github",
-        //       url: "https://github.com/sakshamDS",
-        //     },
-        //   ],
-        // },
-        {
-          name: "SONALI PANDEY",
-          role: "Design Team",
-          image: " /team/Sonali Pandey.jpg",
-          bio: "Visual design and creative solutions",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/sonali-pandey-a3159037a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-        // {
-        //   name: "BHAWESH THAWANI",
-        //   role: "Design Team",
-        //   image: "/team/bhawesh-thawani.jpg",
-        //   bio: "Visual design and creative solutions",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/bhawesh-thawani-031250287",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/bhawesh_thawani",
-        //     },
-        //   ],
-        // },
-        {
-          name: "DISHIKA",
-          role: "Design Team",
-          image: "/team/Dishika Rustagi.jpg",
-          bio: "Visual design and creative solutions",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/dishika-rustagi-97a8aa381",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/_dishika27_?igsh=Z3N6cjFzbDg3cmlw",
-            },
-          ],
-        },
-        // {
-        //   name: "SATWIK PRUTHI",
-        //   role: "Design Team",
-        //   image: "/team/satwik-pruthi.jpg",
-        //   bio: "Visual design and creative solutions",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/satwik-pruthi-49a16a307",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/satwik_pruthi?igsh=MWYyYXBlZ21zbDlwOQ==",
-        //     },
-        //   ],
-        // },
-        {
-          name: "KARTIK AGGARWAL",
-          role: "Design Team",
-          image: "/team/kartik Aggarwal.jpg",
-          bio: "Visual design and creative solutions",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/kartik-aggarwal-797a8b327/",
-            },
 
-          ],
-        },
-        // {
-        //   name: "NITIKA RATHI",
-        //   role: "Design Team",
-        //   image: "/team/nitika.png",
-        //   bio: "Visual design and creative solutions",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "http://linkedin.com/in/NitikaRathee",
-        //     },
-        //     {
-        //       platform: "github",
-        //       url: "https://github.com/nitikarathee",
-        //     },
-        //   ],
-        // },
-        {
-          name: "ANKITA",
-          role: "Design Team",
-          image: "/team/IMG-20250407-WA0041 - Ankita Grover.jpg",
-          bio: "Visual design and creative solutions",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "github",
-              url: "",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      name: "SOCIAL MEDIA MANAGEMENT",
-      icon: <Megaphone className="w-6 h-6" />,
-        members: [
+     {
+      name: "ANCHORS TEAM",
+      icon: <Video className="w-6 h-6" />,
+       
+      members: [
 
         {
-          name: "AYUSH",
-          role: "Social Media Lead",
-          image: "/team/IMG-20250928-WA0041 - Aayush Kumar Jha.jpg",
-          bio: "Managing public relations and communications",
+          name: "KHUSHI KALRA",
+          role: "Anchors Team",
+          image: "/team/khushi kalra.jpg",
+          bio: "Leading social media strategy and engagement",
           socials: [
             {
               platform: "linkedin",
-              url: " https://www.linkedin.com/in/jhaakj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+              url: " https://www.linkedin.com/in/khushi-tyagi-006b72308",
             },
             {
               platform: "instagram",
-              url: "https://www.instagram.com/___iaayush___/",
+              url: "",
             },
           ],
         },
         {
-          name: "KASHISH PAL",
-          role: "Social Media Co-Lead",
-          image: "/team/Kashish Pal.jpg",
-          bio: "Event planning and execution support",
+          name: "RAKSHA",
+          role: "Anchors Team",
+          image: "/team/Raksha.jpg",
+          bio: "Leading social media strategy and engagement",
           socials: [
             {
               platform: "linkedin",
               url: "",
             },
-            { platform: "instagram", url: "" },
+            {
+              platform: "instagram",
+              url: "https://www.instagram.com/salivator_chaioamore/",
+            },
           ],
         },
-      
         {
-          name: "TANISHKA",
-          role: "Social Media ",
-          image: "/team/Tanishka Dagar.jpg",
-          bio: "Managing public relations and communications",
+          name: "KIRTI SHARMA",
+          role: "Anchors Team",
+          image: "/team/Kirti Sharma.jpg",
+          bio: "Leading social media strategy and engagement",
           socials: [
             {
               platform: "linkedin",
-              url: " https://www.linkedin.com/in/tanishka-dagar-801776309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+              url: "",
             },
             {
               platform: "instagram",
-              url: "https://www.instagram.com/why.taeishka/",
+              url: " https://www.instagram.com/system_overload_please_wait?utm_source=qr&igsh=Y3U2MjNqa2c3am4w",
             },
           ],
         },
         {
-          name: "UMANG",
-          role: "Social Media ",
-          image: "/team/Umang Bakshi.jpeg",
-          bio: "Managing public relations and communications",
+          name: "KHUSHI TYAGI",
+          role: "Anchors Team",
+          image: "/team/Khushi Tyagi.jpg",
+          bio: "Leading social media strategy and engagement",
           socials: [
             {
               platform: "linkedin",
-              url: " https://www.linkedin.com/in/umang-bakshi-7441b0383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+              url: " https://www.linkedin.com/in/khushi-tyagi-006b72308",
             },
             {
               platform: "instagram",
-              url: "https://www.instagram.com/Bakshiiumangg_/",
+              url: "",
             },
           ],
         },
         {
-          name: "BHAVYA KHURANA",
-          role: "Social Media ",
-          image: "/team/Bhavya Khurana.jpg",
-          bio: "Managing public relations and communications",
+          name: "SHRADDHA",
+          role: "Anchors Team",
+          image: "/team/Shraddha.jpg",
+          bio: "Leading social media strategy and engagement",
           socials: [
             {
               platform: "linkedin",
-              url: " https://www.linkedin.com/in/bhavya-khurana-177195381",
+              url: "https://www.linkedin.com/in/shraddha-94b3b5375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             },
             {
               platform: "instagram",
@@ -1211,194 +1016,609 @@ const teamCategories: TeamCategory[] = [
         },
 
       ],
-    },
+    }, 
     {
-      name: "CONTENT TEAM",
-      icon: <FileText className="w-6 h-6" />,
-         members: [
-        // {
-        //   name: "TANNISHTHA SACHDEVA",
-        //   role: "Content Lead",
-        //   image: "/team/Tannishtha-sachdeva.jpg",
-        //   bio: "Writing compelling copy and content",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/tannishtha-sachdeva-6a089a2ba",
-        //     },
-        //     {
-        //       platform: "github",
-        //       url: "https://github.com/Tan-3006",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/tannishtha.sachdeva",
-        //     },
-        //   ],
-        // },
+  name: "CONTENT TEAM",
+  icon: <FileText className="w-6 h-6" />,
+  members: [
+    {
+      name: "MUSTAFA QADEER",
+      role: "Content Team Lead",
+      image: "/team/mustafa-qadeer.jpg",
+      bio: "Content creation and storytelling",
+      socials: [
         {
-          name: "MUSTAFA QADEER",
-          role: "Content Team Lead",
-          image: "/team/mustafa-qadeer.jpg",
-          bio: "Content creation and storytelling",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/mustafa-qadeer-3812b8329/",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/mustafaqadeer1/",
-            },
-            {
-              platform: "github",
-              url: "https://github.com/MustafaQadeer",
-            },
-          ],
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/mustafa-qadeer-3812b8329/",
         },
         {
-          name: "SHRISHTI",
-          role: "Content Co-Lead",
-          image: "/team/Shrishti Upadhya.jpg",
-          bio: "Writing compelling copy and content",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/shrishti-upadhya-99976b382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/shri___16?igsh=MXNpdmgyZzhyeDlnaA==",
-            },
-          ],
+          platform: "instagram",
+          url: "https://www.instagram.com/mustafaqadeer1/",
         },
         {
-          name: "SANJANA",
-          role: "Content Team",
-          image: "/team/Sanjana Sharma.jpg",
-          bio: "Writing compelling copy and content",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/sanjana-sharma-607268318/",
-            },
-
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
+          platform: "github",
+          url: "https://github.com/MustafaQadeer",
         },
-        {
-          name: "BHAVYA",
-          role: "Content Team",
-          image: "/team/Bhavya.jpeg",
-          bio: "Writing compelling copy and content",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/bhavya-ds",
-            },
-
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/_bhavyakumar25/",
-            },
-          ],
-        },
-        {
-          name: "PRAGATI",
-          role: "Content Team ",
-          image: "/team/Pragati.jpg",
-          bio: "Content creation and storytelling",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/pragati-bhardwaj-a25038350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-
-          ],
-        },
-
-        {
-          name: "AYUSH KUMAR",
-          role: "Content Team",
-          image: "/team/Ayush Kumar con.jpg",
-          bio: "Content creation and storytelling",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/ayush-kumar-806371377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/freaky_ayush07/",
-            },
-           
-    
-          ],
-        },
-        {
-          name: "SNEHA SINGHAL",
-          role: "Content Team",
-          image: "/team/Sneha Singhal.jpg",
-          bio: "Content creation and storytelling",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/sneha-singhal-7b3369366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/snehasinghal1407?igsh=YzljYTk1ODg3Zg==",
-            },
-
-          ],
-        },
-        {
-          name: "RIDHIMA SHARMA",
-          role: "Content Team",
-          image: "/team/Ridhima Sharma.png",
-          bio: "Content creation and storytelling",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "www.linkedin.com/in/ridhimasharma17",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-
-          ],
-        },
-        // {
-        //   name: "DEEPTI GUPTA",
-        //   role: "Content Team",
-        //   image: "/team/deepti-gupta.jpg",
-        //   bio: "Content creation and storytelling",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/deepti-gupta-7b0672296",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/deeptigupta766",
-        //     },
-        //     {
-        //       platform: "github",
-        //       url: "https://github.com/Deepti302006",
-        //     },
-        //   ],
-        // },
       ],
     },
+    {
+      name: "SHRISHTI",
+      role: "Content Co-Lead",
+      image: "/team/Shrishti Upadhya.jpg",
+      bio: "Writing compelling copy and content",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/shrishti-upadhya-99976b382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/shri___16?igsh=MXNpdmgyZzhyeDlnaA==",
+        },
+      ],
+    },
+
+    {
+      name: "AYUSH KUMAR",
+      role: "Content Team",
+      image: "/team/Ayush Kumar con.jpg",
+      bio: "Content creation and storytelling",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/ayush-kumar-806371377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/freaky_ayush07/",
+        },
+      ],
+    },
+    {
+      name: "BHAVYA",
+      role: "Content Team",
+      image: "/team/Bhavya.jpeg",
+      bio: "Writing compelling copy and content",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/bhavya-ds",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/_bhavyakumar25/",
+        },
+      ],
+    },
+    {
+      name: "PRAGATI",
+      role: "Content Team ",
+      image: "/team/Pragati.jpg",
+      bio: "Content creation and storytelling",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/pragati-bhardwaj-a25038350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "RIDHIMA SHARMA",
+      role: "Content Team",
+      image: "/team/Ridhima Sharma.png",
+      bio: "Content creation and storytelling",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "www.linkedin.com/in/ridhimasharma17",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "SANJANA",
+      role: "Content Team",
+      image: "/team/Sanjana Sharma.jpg",
+      bio: "Writing compelling copy and content",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/sanjana-sharma-607268318/",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "SNEHA SINGHAL",
+      role: "Content Team",
+      image: "/team/Sneha Singhal.jpg",
+      bio: "Content creation and storytelling",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/sneha-singhal-7b3369366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/snehasinghal1407?igsh=YzljYTk1ODg3Zg==",
+        },
+      ],
+    },
+  ],
+},
+  
+{
+  name: "DESIGN TEAM",
+  icon: <Palette className="w-6 h-6" />,
+  members: [
+    {
+      name: "JAYAN ARORA",
+      role: "Design Lead",
+      image: "/team/Jayaan-Arora.jpg",
+      bio: "UI/UX design and creative development",
+      socials: [
+        { platform: "linkedin", url: " https://www.linkedin.com/in/jayan-arora-undefined-0545622b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+        { platform: "instagram", url: "" },
+      ],
+    },
+    {
+      name: "ATISHAY",
+      role: "Design Co-Lead",
+      image: "/team/Atishay-Jain.png",
+      bio: "Creative design and visual communication",
+      socials: [
+        { platform: "linkedin", url: "" },
+        { platform: "instagram", url: "" },
+        { platform: "github", url: "" },
+      ],
+    },
+
+    {
+      name: "ANKITA",
+      role: "Design Team",
+      image: "/team/IMG-20250407-WA0041 - Ankita Grover.jpg",
+      bio: "Visual design and creative solutions",
+      socials: [
+        { platform: "linkedin", url: "" },
+        { platform: "github", url: "" },
+      ],
+    },
+    {
+      name: "BHAVYA SUNEJA",
+      role: "Design Team",
+      image: "/team/Bhavya-suneja.jpeg",
+      bio: "Creative design and visual storytelling",
+      socials: [
+        { platform: "linkedin", url: "https://www.linkedin.com/in/bhavya-suneja/" },
+        { platform: "instagram", url: "" },
+      ],
+    },
+    {
+      name: "DISHIKA",
+      role: "Design Team",
+      image: "/team/Dishika Rustagi.jpg",
+      bio: "Visual design and creative solutions",
+      socials: [
+        { platform: "linkedin", url: " https://www.linkedin.com/in/dishika-rustagi-97a8aa381" },
+        { platform: "instagram", url: " https://www.instagram.com/_dishika27_?igsh=Z3N6cjFzbDg3cmlw" },
+      ],
+    },
+    {
+      name: "KARTIK AGGARWAL",
+      role: "Design Team",
+      image: "/team/kartik Aggarwal.jpg",
+      bio: "Visual design and creative solutions",
+      socials: [
+        { platform: "linkedin", url: "https://www.linkedin.com/in/kartik-aggarwal-797a8b327/" },
+      ],
+    },
+    {
+      name: "MOHAMMAD FAIZ",
+      role: "Design Team",
+      image: "/team/Mohammad Faiz.png",
+      bio: "Creative design and visual storytelling",
+      socials: [
+        { platform: "linkedin", url: " https://www.linkedin.com/in/mohammad-faiz-097b45378" },
+        { platform: "instagram", url: " https://www.instagram.com/mohammad_faiz007" },
+      ],
+    },
+    {
+      name: "SONALI PANDEY",
+      role: "Design Team",
+      image: " /team/Sonali Pandey.jpg",
+      bio: "Visual design and creative solutions",
+      socials: [
+        { platform: "linkedin", url: " https://www.linkedin.com/in/sonali-pandey-a3159037a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+        { platform: "instagram", url: "" },
+      ],
+    },
+  ],
+},
+ {
+  name: "EVENT MANAGEMENT",
+  icon: <Calendar className="w-6 h-6" />,
+
+  members: [
+    {
+      name: "RIYA NAGPAL",
+      role: "Event Management Lead",
+      image: "/team/riya-nagpal.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/riya-nagpal-56aa96327",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/riyanagpal__12",
+        },
+        {
+          platform: "github",
+          url: "https://github.com/RiyaNagpal12",
+        },
+      ],
+    },
+    {
+      name: "DAAMAN",
+      role: "Event Management Co-Lead",
+      image: "/team/Daaman Sharma.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/daaman-mudgal-sharma-89345a374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "SANIYA",
+      role: "Event Management Co-Lead",
+      image: "/team/Saniya Khan.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/saniya-khan-71ab22322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/sani_yakhan25005?igsh=bmM4eG41cWx6Zjk1",
+        },
+      ],
+    },
+
+    {
+      name: "AARYAN",
+      role: "Event Management Member",
+      image: "/team/Aaryan Sharma.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/aaryan-sharma-052a7527b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "AYUSH KUMAR",
+      role: "Event Management Member",
+      image: "/team/Ayush KumarEM.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/kumawat.ayush06?igsh=andhbHF0ZTdmZnYx",
+        },
+      ],
+    },
+    {
+      name: "CHHAVILATA",
+      role: "Event Management Member",
+      image: "/team/IMG_20251005_000434 - Chhavi.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "HASRAT",
+      role: "Event Management Member",
+      image: "/team/Hasrat Kaushik.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "MANYA GUPTA",
+      role: "Event Management Member",
+      image: "/team/Manya Gupta.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " www.linkedin.com/in/manya-gupta-8a2528380",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/_.manya.gupta?igsh=MW40cmJwMWh4dHdyaw==",
+        },
+      ],
+    },
+    {
+      name: "RISSICA",
+      role: "Event Management Member",
+      image: "/team/Rissica Yadav.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/rissica-yadav-1a799337a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "SHREYA MITTAL",
+      role: "Event Management Member",
+      image: "/team/Shreya Mittal.jpg",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/shreya-mittal-79a838225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/_.shreyamittal_06?igsh=ajNiYms2Z3oxaDJy",
+        },
+      ],
+    },
+    {
+      name: "STUTI",
+      role: "Event Management Member",
+      image: "/team/STUTI BHATTACHARJEE.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/stuti-bhattacharjee-175609378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/stuti_bhattacharjee?igsh=MTFxNjRhMTc2MzkzNg==",
+        },
+      ],
+    },
+    {
+      name: "VAISHNAVI",
+      role: "Event Management Member",
+      image: "/team/Vaishnavi Kapoor.jpeg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/vaishnavi-kapoor-58943b37a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/vaish_kxpoor27?igsh=dnB6eGxvajk0ajZk&utm_source=qr",
+        },
+      ],
+    },
+    {
+      name: "YASHITA GUPTA",
+      role: "Event Management Member",
+      image: "/team/yashitaem.jpg",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/yashita-gupta-602232347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/_yashita.gupta__?igsh=cHl6NWJpc3dsZXVr",
+        },
+      ],
+    },
+    {
+      name: "YUKTI",
+      role: "Event Management Member",
+      image: "/team/Yukti.JPG",
+      bio: "Managing venue arrangements and coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/yukti-952526381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/phogat_yukti?igsh=MW12YXRrZWJjeWdqcw==",
+        },
+      ],
+    },
+  ],
+},
+{
+  name: "LOGISTICS TEAM",
+  icon: <Video className="w-6 h-6" />,
+  members: [
+    {
+      name: "PRARTHANA",
+      role: "Logistics Lead",
+      image: "/TEAM/prarthna-punpher.JPG",
+      bio: "Leading social media strategy and engagement",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "  https://www.linkedin.com/in/prarthna-punpher-b3354131a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/prarthna_276?igsh=aGQ0bHl2aDFjeTh1",
+        },
+      ],
+    },
+    {
+      name: "ANNU DAGAR",
+      role: "Logistics Co-Lead",
+      image: "/team/Annu-dagar.jpg",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/annu-dagar-40655431b",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/annudagar19",
+        },
+      ],
+    },
+
+    {
+      name: "ANYA VOHRA",
+      role: "Logistics Member",
+      image: "/team/Anya Vohra.jpg",
+      bio: "Social media content and community management",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/anyavohra.27/",
+        },
+      ],
+    },
+    {
+      name: "BHAVYA KHURANA",
+      role: "Logistics Member",
+      image: "/team/Bhavya Khurana.jpg",
+      bio: "Managing public relations and communications",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/bhavya-khurana-177195381",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "JYOTSHNA SINGH",
+      role: "Logistics Member",
+      image: "/team/jyotshna singh.jpeg",
+      bio: "Social media content and community management",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/jyotshna-singh-89b805388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/yayajyotshna?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        },
+      ],
+    },
+    {
+      name: "LAVANYA JAIN",
+      role: "Logistics Member",
+      image: "/team/Lavanya Jain.jpg",
+      bio: "Social media content and community management",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/lavanya-jain-a57101380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/lavanyajain1328?igsh=d3p3bWx5OGVhNHJn",
+        },
+      ],
+    },
+    {
+      name: "MANTHAN",
+      role: "Logistics Member",
+      image: "/team/Manthan Aggarwal.jpg",
+      bio: "Social media content and community management",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " www.linkedin.com/in/manthan-aggarwal-20278937a",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "PARI MITTAL",
+      role: "Logistics Member",
+      image: "/team/parimittal.jpg",
+      bio: "Social media content and community management",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+
+  ],
+},
+
+   
+
     {
       name: "PHOTOGRAPHY TEAM",
       icon: <Camera className="w-6 h-6" />,
@@ -1488,996 +1708,361 @@ const teamCategories: TeamCategory[] = [
 
       ],
     },
+{
+  name: "PR & MARKETING TEAM",
+  icon: <FolderOpen className="w-6 h-6" />,
+
+  members: [
     {
-      name: "PR & MARKETING TEAM",
-      icon: <FolderOpen className="w-6 h-6" />,
-         members: [
-        // {
-        //   name: "MANYA MADAN",
-        //   role: "Marketing Team Lead",
-        //   image: "/team/Manya.jpg",
-        //   bio: "Event coordination and logistics",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/manya-madan-732172283/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/yessitsmanya",
-        //     },
-        //   ],
-        // },
+      name: "KRISH KAPOOR",
+      role: "PR & Marketing Team Lead",
+      image: "/team/KrishKapoor.jpg",
+      bio: "Project management and team coordination",
+      socials: [
         {
-          name: "KRISH KAPOOR",
-          role: "PR & Marketing Team Lead",
-          image: "/team/KrishKapoor.jpg",
-          bio: "Project management and team coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/krish-kapoor-b83075360/",
-            },
-          ],
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/krish-kapoor-b83075360/",
         },
-        {
-          name: "RIYA SEHGAL",
-          role: "PR & Marketing Team Co-Lead",
-          image: "/team/riya-sehgal.jpg",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/riya-sehgal-790439327/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/riya.iaaaa",
-            },
-          ],
-        },
-        // {
-        //   name: "KHUSHI VERMA",
-        //   role: "Marketing Team",
-        //   image: "/team/Khushi-verma.jpg",
-        //   bio: "Coordinating project activities and teams",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/khushi-verma-a25911280",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/_khusheyyy/",
-        //     },
-        //     {
-        //       platform: "github",
-        //       url: "https://github.com/Khushiv0707",
-        //     },
-        //   ],
-        // },
-        // {
-        //   name: "PRARTHNA PUNPHER",
-        //   role: "Marketing Team",
-        //   image: "/team/prarthna-punpher.jpg",
-        //   bio: "Project management and team coordination",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/prarthna-punpher-b3354131a",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/prarthna_276/",
-        //     },
-        //   ],
-        // },
-
-        {
-          name: "AAYUSH MEHRA",
-          role: "PR & Marketing Team",
-          image: "/team/AayushMehra.jpg",
-          bio: "Project management and team coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/aayush-mehra-2725162b6",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/aayushmehra_1010",
-            },
-            {
-              platform: "github",
-              url: "https://github.com/AayushMehra10",
-            },
-          ],
-        },
-
-        {
-          name: "ANUSHKA",
-          role: "PR & Marketing Team",
-          image: "/team/Snapchat-1564153194 - Sunita Yadav.jpg",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/anushka-yadav-a254b730b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/anuxhkaydv?igsh=MTdlanB5bXVzeDlnNw==",
-            },
-          ],
-        },
-        {
-          name: "KAKUL GARG",
-          role: "PR & Marketing Team",
-          image: "/team/Kakul-Garg.jpg",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/kakul-garg-a63887384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/_kakulgarg?utm_source=ig_web_button_share_sheet&igsh=MWs2eWNucmswaml1dg==",
-            },
-          ],
-        },
-        {
-          name: "PRISHA KHETARPAL",
-          role: "PR & Marketing Team",
-          image: "/team/Prisha Khetarpal.jpg",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/prisha-khetarpal-660015378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/kprisha_26?igsh=MWl1MzdiZ2c3azlieQ==",
-            },
-          ],
-        },
-        {
-          name: "SAI AMARTYA",
-          role: "PR & Marketing Team",
-          image: "/team/Sai Amartya shetty.jpeg",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-        {
-          name: "SHUBHAM",
-          role: "PR & Marketing Team",
-          image: "/team/Screenshot_20251004-222205.WhatsApp - shubham.png",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/shubham-chaudhary-7bb4b030b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-        {
-          name: "GURNEET",
-          role: "PR & Marketing Team",
-          image: "/team/gurneet-sokhi.jpg",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/gurneet-sokhi-979529326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/sokhigurneet?igsh=YzlubjJua3F5N2pt&utm_source=qr",
-            },
-          ],
-        },
-        {
-          name: "ARJUN",
-          role: "PR & Marketing Team",
-          image: "/team/Arjun Srivastava.jpg",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-
       ],
     },
     {
-      name: "VIDEOGRAPHY TEAM",
-      icon: <Video className="w-6 h-6" />,
-     
+      name: "RIYA SEHGAL",
+      role: "PR & Marketing Team Co-Lead",
+      image: "/team/riya-sehgal.jpg",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/riya-sehgal-790439327/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/riya.iaaaa",
+        },
+      ],
+    },
+
+    {
+      name: "AAYUSH MEHRA",
+      role: "PR & Marketing Team",
+      image: "/team/AayushMehra.jpg",
+      bio: "Project management and team coordination",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/aayush-mehra-2725162b6",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/aayushmehra_1010",
+        },
+        {
+          platform: "github",
+          url: "https://github.com/AayushMehra10",
+        },
+      ],
+    },
+    {
+      name: "ANUSHKA",
+      role: "PR & Marketing Team",
+      image: "/team/Snapchat-1564153194 - Sunita Yadav.jpg",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/anushka-yadav-a254b730b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/anuxhkaydv?igsh=MTdlanB5bXVzeDlnNw==",
+        },
+      ],
+    },
+    {
+      name: "ARJUN",
+      role: "PR & Marketing Team",
+      image: "/team/Arjun Srivastava.jpg",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "GURNEET",
+      role: "PR & Marketing Team",
+      image: "/team/gurneet-sokhi.jpg",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/gurneet-sokhi-979529326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/sokhigurneet?igsh=YzlubjJua3F5N2pt&utm_source=qr",
+        },
+      ],
+    },
+    {
+      name: "KAKUL GARG",
+      role: "PR & Marketing Team",
+      image: "/team/Kakul-Garg.jpg",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "https://www.linkedin.com/in/kakul-garg-a63887384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/_kakulgarg?utm_source=ig_web_button_share_sheet&igsh=MWs2eWNucmswaml1dg==",
+        },
+      ],
+    },
+    {
+      name: "PRISHA KHETARPAL",
+      role: "PR & Marketing Team",
+      image: "/team/Prisha Khetarpal.jpg",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/prisha-khetarpal-660015378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: " https://www.instagram.com/kprisha_26?igsh=MWl1MzdiZ2c3azlieQ==",
+        },
+      ],
+    },
+    {
+      name: "SAI AMARTYA",
+      role: "PR & Marketing Team",
+      image: "/team/Sai Amartya shetty.jpeg",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: "",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+    {
+      name: "SHUBHAM",
+      role: "PR & Marketing Team",
+      image: "/team/Screenshot_20251004-222205.WhatsApp - shubham.png",
+      bio: "Event coordination and logistics",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/shubham-chaudhary-7bb4b030b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+  ],
+},
+ {
+      name: "SOCIAL MEDIA MANAGEMENT",
+      icon: <Megaphone className="w-6 h-6" />,
+        members: [
+
+        {
+          name: "AYUSH",
+          role: "Social Media Lead",
+          image: "/team/IMG-20250928-WA0041 - Aayush Kumar Jha.jpg",
+          bio: "Managing public relations and communications",
+          socials: [
+            {
+              platform: "linkedin",
+              url: " https://www.linkedin.com/in/jhaakj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            },
+            {
+              platform: "instagram",
+              url: "https://www.instagram.com/___iaayush___/",
+            },
+          ],
+        },
+        {
+          name: "KASHISH PAL",
+          role: "Social Media Co-Lead",
+          image: "/team/Kashish Pal.jpg",
+          bio: "Event planning and execution support",
+          socials: [
+            {
+              platform: "linkedin",
+              url: "",
+            },
+            { platform: "instagram", url: "" },
+          ],
+        },
       
-      members: [
+        {
+          name: "TANISHKA",
+          role: "Social Media ",
+          image: "/team/Tanishka Dagar.jpg",
+          bio: "Managing public relations and communications",
+          socials: [
+            {
+              platform: "linkedin",
+              url: " https://www.linkedin.com/in/tanishka-dagar-801776309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            },
+            {
+              platform: "instagram",
+              url: "https://www.instagram.com/why.taeishka/",
+            },
+          ],
+        },
+        {
+          name: "UMANG",
+          role: "Social Media ",
+          image: "/team/Umang Bakshi.jpeg",
+          bio: "Managing public relations and communications",
+          socials: [
+            {
+              platform: "linkedin",
+              url: " https://www.linkedin.com/in/umang-bakshi-7441b0383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            },
+            {
+              platform: "instagram",
+              url: "https://www.instagram.com/Bakshiiumangg_/",
+            },
+          ],
+        },
+
+
+      ],
+    },
+
         // {
-        //   name: "RITURAJ",
-        //   role: "Videography Lead",
-        //   image: "/team/rituraj.jpg",
-        //   bio: "Leading social media strategy and engagement",
+        //   name: "DEEPTI GUPTA",
+        //   role: "Content Team",
+        //   image: "/team/deepti-gupta.jpg",
+        //   bio: "Content creation and storytelling",
         //   socials: [
         //     {
         //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/rituraj-kumar-0020761b8",
+        //       url: "https://www.linkedin.com/in/deepti-gupta-7b0672296",
         //     },
         //     {
         //       platform: "instagram",
-        //       url: "https://www.instagram.com/iamraj_2003",
+        //       url: "https://www.instagram.com/deeptigupta766",
         //     },
         //     {
         //       platform: "github",
-        //       url: "https://github.com/Rituraj552003",
+        //       url: "https://github.com/Deepti302006",
         //     },
         //   ],
         // },
-        {
-          name: "SHIVAM",
-          role: "Videography Lead",
-          image: "/team/Shivam Kumar.jpg",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/shivam-kumar-a9446037b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/shivxm_54?igsh=MTlyYmp4c20wcWNoZg==",
-            },
 
-          ],
+{
+  name: "VIDEOGRAPHY TEAM",
+  icon: <Video className="w-6 h-6" />,
+
+  members: [
+    {
+      name: "SHIVAM",
+      role: "Videography Lead",
+      image: "/team/Shivam Kumar.jpg",
+      bio: "Leading social media strategy and engagement",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/shivam-kumar-a9446037b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         },
         {
-          name: "MDALSA",
-          role: "Videography Team",
-          image: "/team/20250719_130138 - Mdalsa Sirohi.jpg",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/mdalsa-sirohi-1731b1366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/mdalsa.sirohi?igsh=dno5ZHV1cWhvZHVn",
-            },
-
-          ],
+          platform: "instagram",
+          url: "https://www.instagram.com/shivxm_54?igsh=MTlyYmp4c20wcWNoZg==",
         },
-        {
-          name: "MAYANK",
-          role: "Videography Team",
-          image: "/team/Mayank Chandok.jpg",
-          bio: "",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/mayank-chandok-aba808347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-
-          ],
-        },
-        {
-          name: "ISHITA PAL",
-          role: "Videography Team",
-          image: "/team/ISHITA PAL.jpg",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/ishita-pal-87542b380/",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/ishitaa16._?igsh=MTBrMDlrYWM1NmpmeQ==",
-            },
-
-          ],
-        },
-        {
-          name: "VEER",
-          role: "Videography Team",
-          image: "/team/Veer Sharma.jpg",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/veer-sharma-18590036a?trk=contact-info",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-
-          ],
-        },
-        // {
-        //   name: "AKASH KUMAR SHARMA",
-        //   role: "Videography Member",
-        //   image: "/team/Akash-kumar-sharma.jpg",
-        //   bio: "Leading social media strategy and engagement",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/akash-kumar-sharma-62598b30b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        //     },
-        //     { platform: "github", url: "" },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/sepia_erin",
-        //     },
-        //   ],
-        // },
       ],
     },
+
     {
-      name: "EVENT MANAGEMENT",
-      icon: <Calendar className="w-6 h-6" />,
-       
-      members: [
-
+      name: "ISHITA PAL",
+      role: "Videography Team",
+      image: "/team/ISHITA PAL.jpg",
+      bio: "Leading social media strategy and engagement",
+      socials: [
         {
-          name: "RIYA NAGPAL",
-          role: "Event Management Lead",
-          image: "/team/riya-nagpal.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/riya-nagpal-56aa96327",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/riyanagpal__12",
-            },
-            {
-              platform: "github",
-              url: "https://github.com/RiyaNagpal12",
-            },
-          ],
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/ishita-pal-87542b380/",
         },
         {
-          name: "DAAMAN",
-          role: "Event Management Co-Lead",
-          image: "/team/Daaman Sharma.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/daaman-mudgal-sharma-89345a374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-
-          ],
-        },
-        {
-          name: "SANIYA",
-          role: "Event Management Co-Lead",
-          image: "/team/Saniya Khan.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/saniya-khan-71ab22322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/sani_yakhan25005?igsh=bmM4eG41cWx6Zjk1",
-            },
-          ],
-        },
-        // {
-        //   name: "ARCHITI DADHWAL",
-        //   role: "Event Management Member",
-        //   image: "/team/architi-dadhwal.png",
-        //   bio: "Managing venue arrangements and coordination",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/architi-dadhwal/",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "",
-        //     },
-        //   ],
-        // },
-        // {
-        //   name: "PANKAJ KUMAR",
-        //   role: "Event Management Member",
-        //   image: "/team/pankaj-kumar.jpg",
-        //   bio: "Event coordination and logistics",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/pankaj-kumar-917156352/",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/_pankaj._27",
-        //     },
-        //   ],
-        // },
-
-        {
-          name: "SHREYA MITTAL",
-          role: "Event Management Member",
-          image: "/team/Shreya Mittal.jpg",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/shreya-mittal-79a838225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/_.shreyamittal_06?igsh=ajNiYms2Z3oxaDJy",
-            },
-
-          ],
-        },
-              {
-          name: "YASHITA GUPTA",
-          role: "Event Management Member",
-          image: "/team/Yashita Gupta.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/yashita-gupta-602232347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/_yashita.gupta__?igsh=cHl6NWJpc3dsZXVr",
-            },
-          ],
-        },
-
-              {
-          name: "HASRAT",
-          role: "Event Management Member",
-          image: "/team/Hasrat Kaushik.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-              {
-          name: "AYUSH KUMAR",
-          role: "Event Management Member",
-          image: "/team/Ayush KumarEM.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/kumawat.ayush06?igsh=andhbHF0ZTdmZnYx",
-            },
-          ],
-        },
-              {
-          name: "DHWANI NAGPAL",
-          role: "Event Management Member",
-          image: "/team/Dhwani Nagpal.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/dhwani-nagpal-963730388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-              {
-          name: "VAISHNAVI",
-          role: "Event Management Member",
-          image: "/team/Vaishnavi Kapoor.jpeg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/vaishnavi-kapoor-58943b37a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/vaish_kxpoor27?igsh=dnB6eGxvajk0ajZk&utm_source=qr",
-            },
-          ],
-        },
-              {
-          name: "STUTI",
-          role: "Event Management Member",
-          image: "/team/STUTI BHATTACHARJEE.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/stuti-bhattacharjee-175609378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/stuti_bhattacharjee?igsh=MTFxNjRhMTc2MzkzNg==",
-            },
-          ],
-        },
-              {
-          name: "AARYAN",
-          role: "Event Management Member",
-          image: "/team/Aaryan Sharma.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/aaryan-sharma-052a7527b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-              {
-          name: "MANYA GUPTA",
-          role: "Event Management Member",
-          image: "/team/Manya Gupta.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " www.linkedin.com/in/manya-gupta-8a2528380",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/_.manya.gupta?igsh=MW40cmJwMWh4dHdyaw==",
-            },
-          ],
-        },
-              {
-          name: "RISSICA",
-          role: "Event Management Member",
-          image: "/team/Rissica Yadav.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/rissica-yadav-1a799337a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-              {
-          name: "CHHAVILATA",
-          role: "Event Management Member",
-          image: "/team/IMG_20251005_000434 - Chhavi.jpg",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-              {
-          name: "YUKTI",
-          role: "Event Management Member",
-          image: "/team/Yukti.JPG",
-          bio: "Managing venue arrangements and coordination",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/yukti-952526381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/phogat_yukti?igsh=MW12YXRrZWJjeWdqcw==",
-            },
-          ],
-        },
-        // {
-        //   name: "GURNEET SOKHI",
-        //   role: "Event Management Member",
-        //   image: "/team/gurneet-sokhi.jpg",
-        //   bio: "Event coordination and logistics",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/gurneet-sokhi-979529326",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/sokhigurneet",
-        //     },
-        //   ],
-        // },
-        // {
-        //   name: "VAIBHAV",
-        //   role: "Event Management Member",
-        //   image: "/team/Vaibhav.jpg",
-        //   bio: "Event coordination and logistics",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "",
-        //     },
-        //   ],
-        // },
-
-        // {
-        //   name: "VANSHIKA GULATI",
-        //   role: "Event Management Member",
-        //   image: "/team/vanshika-gulati.jpg",
-        //   bio: "Event coordination and logistics",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/vanshika-gulati-58749b333",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/vanshikaa2506	",
-        //     },
-        //   ],
-        // },
-        // {
-        //   name: "MANYA MADAN",
-        //   role: "Event Management Member",
-        //   image: "/team/Manya.jpg",
-        //   bio: "Event coordination and logistics",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/manya-madan-732172283/",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/yessitsmanya",
-        //     },
-        //   ],
-        // // },
-        // {
-        //   name: "ABHISHEK KUMAR",
-        //   role: "Event Management Member",
-        //   image: "/team/abhishek-kumar.jpg",
-        //   bio: "Event coordination and logistics",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/absk-kr",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/abhishekkr3104",
-        //     },
-        //     {
-        //       platform: "github",
-        //       url: "https://github.com/Abskrdev20",
-        //     },
-        //   ],
-        // },
-        // {
-        //   name: "RIDHIMA MITTALL",
-        //   role: "Event Management Member",
-        //   image: "/team/RidhimaMittal.jpg",
-        //   bio: "Managing venue arrangements and coordination",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/ridhima-mittal-bbb11833b",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/ridhima_mittal11",
-        //     },
-        //   ],
-        // },
-        // {
-        //   name: "RIYA SEHGAL",
-        //   role: "Event Management Member",
-        //   image: "/team/riya-sehgal.jpg",
-        //   bio: "Event coordination and logistics",
-        //   socials: [
-        //     {
-        //       platform: "linkedin",
-        //       url: "https://www.linkedin.com/in/riya-sehgal-790439327",
-        //     },
-        //     {
-        //       platform: "instagram",
-        //       url: "https://www.instagram.com/riya.iaaaa",
-        //     },
-        //   ],
-        // },
-      ],
-    },
-    {
-      name: "LOGISTICS TEAM",
-      icon: <Video className="w-6 h-6" />,
-       
-      members: [
-
-        {
-          name: "PRARTHANA",
-          role: "Logistics Lead",
-          image: "/TEAM/prarthna-punpher.JPG",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "  https://www.linkedin.com/in/prarthna-punpher-b3354131a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/prarthna_276?igsh=aGQ0bHl2aDFjeTh1",
-            },
-          ],
-        },
-                {
-          name: "ANNU DAGAR",
-          role: "Logistics Co-Lead",
-          image: "/team/Annu-dagar.jpg",
-          bio: "Event coordination and logistics",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/annu-dagar-40655431b",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/annudagar19",
-            },
-          ],
-        },
-        {
-          name: "PRIYANSHI",
-          role: "Logistics Member",
-          image: "/team/img - Priyanshi Pilania.jpg",
-          bio: "Social media content and community management",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "github",
-              url: "",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-        {
-          name: "JYOTSHNA SINGH",
-          role: "Logistics Member",
-          image: "/team/jyotshna singh.jpeg",
-          bio: "Social media content and community management",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/jyotshna-singh-89b805388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/yayajyotshna?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-            },
-          ],
-        },
-        {
-          name: "MANTHAN",
-          role: "Logistics Member",
-          image: "/team/Manthan Aggarwal.jpg",
-          bio: "Social media content and community management",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " www.linkedin.com/in/manthan-aggarwal-20278937a",
-            },
-
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-        {
-          name: "LAVANYA JAIN",
-          role: "Logistics Member",
-          image: "/team/Lavanya Jain.jpg",
-          bio: "Social media content and community management",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/lavanya-jain-a57101380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/lavanyajain1328?igsh=d3p3bWx5OGVhNHJn",
-            },
-          ],
-        },
-        {
-          name: "PARI MITTAL",
-          role: "Logistics Member",
-          image: "/team/Pari Mittal.jpg",
-          bio: "Social media content and community management",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-        {
-          name: "ANYA VOHRA",
-          role: "Logistics Member",
-          image: "/team/Anya Vohra.jpg",
-          bio: "Social media content and community management",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/anyavohra.27/",
-            },
-          ],
+          platform: "instagram",
+          url: "https://www.instagram.com/ishitaa16._?igsh=MTBrMDlrYWM1NmpmeQ==",
         },
       ],
     },
     {
-      name: "ANCHORS TEAM",
-      icon: <Video className="w-6 h-6" />,
-       
-      members: [
-
+      name: "MAYANK",
+      role: "Videography Team",
+      image: "/team/Mayank Chandok.jpg",
+      bio: "",
+      socials: [
         {
-          name: "KHUSHI KALRA",
-          role: "Anchors Team",
-          image: "/team/khushi kalra.jpg",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/khushi-tyagi-006b72308",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/mayank-chandok-aba808347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         },
         {
-          name: "RAKSHA",
-          role: "Anchors Team",
-          image: "/team/Raksha.jpg",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "instagram",
-              url: "https://www.instagram.com/salivator_chaioamore/",
-            },
-          ],
+          platform: "instagram",
+          url: "",
         },
-        {
-          name: "KIRTI SHARMA",
-          role: "Anchors Team",
-          image: "/team/Kirti Sharma.jpg",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "",
-            },
-            {
-              platform: "instagram",
-              url: " https://www.instagram.com/system_overload_please_wait?utm_source=qr&igsh=Y3U2MjNqa2c3am4w",
-            },
-          ],
-        },
-        {
-          name: "KHUSHI TYAGI",
-          role: "Anchors Team",
-          image: "/team/Khushi Tyagi.jpg",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: " https://www.linkedin.com/in/khushi-tyagi-006b72308",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-        {
-          name: "SHRADDHA",
-          role: "Anchors Team",
-          image: "/team/Shraddha.jpg",
-          bio: "Leading social media strategy and engagement",
-          socials: [
-            {
-              platform: "linkedin",
-              url: "https://www.linkedin.com/in/shraddha-94b3b5375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            },
-            {
-              platform: "instagram",
-              url: "",
-            },
-          ],
-        },
-
       ],
     },
+    {
+      name: "MDALSA",
+      role: "Videography Team",
+      image: "/team/20250719_130138 - Mdalsa Sirohi.jpg",
+      bio: "Leading social media strategy and engagement",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/mdalsa-sirohi-1731b1366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+        {
+          platform: "instagram",
+          url: "https://www.instagram.com/mdalsa.sirohi?igsh=dno5ZHV1cWhvZHVn",
+        },
+      ],
+    },
+    {
+      name: "VEER",
+      role: "Videography Team",
+      image: "/team/Veer Sharma.jpg",
+      bio: "Leading social media strategy and engagement",
+      socials: [
+        {
+          platform: "linkedin",
+          url: " https://www.linkedin.com/in/veer-sharma-18590036a?trk=contact-info",
+        },
+        {
+          platform: "instagram",
+          url: "",
+        },
+      ],
+    },
+  ],
+},
+
+
+
+
+
+
   ];
 
   const itemVariants = {
@@ -2508,7 +2093,7 @@ const teamCategories: TeamCategory[] = [
 
 export default function TeamSection() {
   return (
- <section id="team" className="container mx-auto px-4 py-20 text-center">
+    <section id="team" className="container mx-auto px-4 py-20 text-center">
       <div className="text-center mb-16">
         <h2
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-glow flicker"
@@ -2530,34 +2115,36 @@ export default function TeamSection() {
               </h3>
             </div>
 
-            {/*  PERFECT CENTERING FIX */}
-            <div className="flex justify-center ">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10 items-stretch">
                 {category.members.map((member, mIndex) => (
                   <div
                     key={mIndex}
-                    className="glass-effect border border-primary/30 rounded-2xl p-6 text-center w-full max-w-sm hover-glow-intense hover-lift transition-all mx-auto"
+                    className="glass-effect border border-primary/30 rounded-2xl p-8 text-center w-full max-w-lg h-full hover-glow-intense hover-lift transition-all mx-auto flex flex-col justify-between"
                   >
-                    <div className="flex justify-center  mb-4">
-                      <div className="relative w-28 h-28 rounded-full overflow-hidden border-2 border-primary/40">
-                        <Image
-                          src={member.image}
-                          alt={member.name}
-                          fill
-                          className="object-cover"
-                        />
+                    <div>
+                      <div className="flex justify-center mb-5">
+                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-primary/40">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
                       </div>
+
+                      <h4 className="text-lg md:text-xl font-bold text-card-foreground">
+                        {member.name}
+                      </h4>
+
+                      <p className="text-sm md:text-base text-primary mt-1 font-semibold">
+                        {member.role}
+                      </p>
                     </div>
 
-                    <h4 className="text-lg md:text-xl font-bold text-card-foreground">
-                      {member.name}
-                    </h4>
-
-                    <p className="text-sm md:text-base text-primary mt-1 font-semibold">
-                      {member.role}
-                    </p>
-
-                    <div className="flex justify-center gap-3 mt-4">
+                    {/* ✅ Social Icons – Equal Normal Size */}
+                    <div className="flex justify-center gap-3 mt-6">
                       {member.socials
                         .filter((s) => s.url.trim() !== "")
                         .map((social, i) => (
@@ -2583,10 +2170,11 @@ export default function TeamSection() {
                 ))}
               </div>
             </div>
-            {/* CENTER FIX END */}
           </div>
         ))}
       </div>
     </section>
   );
 }
+
+
