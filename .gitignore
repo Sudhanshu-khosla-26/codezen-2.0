@@ -13,24 +13,9 @@ logs
 *.log.*
 npm-debug.log*
 
-# Environment variables
+# Env
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-
-# OS and IDE files
-.DS_Store
-*.swp
-*.swo
-*.bak
-Thumbs.db
-.vscode/
-.idea/
-
-# TypeScript build files
-*.tsbuildinfo
-
-# Misc
-package-lock.json
