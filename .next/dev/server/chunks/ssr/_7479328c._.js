@@ -1085,42 +1085,43 @@ __turbopack_context__.s([
     ()=>PrizesSection
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/card.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trophy.js [app-ssr] (ecmascript) <export default as Trophy>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$medal$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Medal$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/medal.js [app-ssr] (ecmascript) <export default as Medal>");
 "use client";
 ;
 ;
 ;
 function PrizesSection() {
-    const mainPrizes = [
+    const prizes = [
         {
             place: "1st Prize",
             amount: "₹15,000",
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"],
-            color: "text-yellow-400"
+            emoji: "🏆",
+            gradient: "from-[#ff005c]/40 to-black/80"
         },
         {
             place: "2nd Prize",
             amount: "₹11,000",
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$medal$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Medal$3e$__["Medal"],
-            color: "text-gray-300"
+            emoji: "🥈",
+            gradient: "from-[#ff3366]/40 to-black/80"
         },
         {
             place: "3rd Prize",
             amount: "₹7,000",
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$medal$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Medal$3e$__["Medal"],
-            color: "text-amber-600"
+            emoji: "🥉",
+            gradient: "from-[#ff0044]/40 to-black/80"
         }
     ];
     const specialPrizes = [
         {
             category: "All-Girls Team",
-            amount: "₹5,000"
+            amount: "₹5,000",
+            emoji: "💎"
         },
         {
             category: "Beginner Team",
-            amount: "₹5,000"
+            amount: "₹5,000",
+            emoji: "🚀"
         }
     ];
     const rewards = [
@@ -1131,185 +1132,338 @@ function PrizesSection() {
         "🤝 Networking & Mentorship Sessions",
         "🚀 Exposure to Industry Experts"
     ];
+    const cardStyles = "border border-[#ff005c]/40 rounded-3xl backdrop-blur-md text-center transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,0,92,0.7)]";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "container mx-auto px-4 py-16 md:py-24",
+        className: "relative overflow-hidden bg-black text-white py-20 px-6 md:px-12",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-center mb-12 md:mb-16",
+                className: "absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,0,92,0.12)_0%,transparent_70%)]"
+            }, void 0, false, {
+                fileName: "[project]/components/prizes-section.tsx",
+                lineNumber: 48,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 bg-[url('/noise.png')] opacity-10"
+            }, void 0, false, {
+                fileName: "[project]/components/prizes-section.tsx",
+                lineNumber: 49,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "text-center mb-12 md:mb-16 relative z-10 animate-scale-in",
+                initial: {
+                    opacity: 0,
+                    y: -40
+                },
+                animate: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: 0.8
+                },
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-5 text-glow text-balance",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-glow flicker tracking-wider animate-scale-in text-balance",
                         style: {
                             fontFamily: "Stranger Things, sans-serif"
                         },
-                        children: "PRIZE BREAKDOWN"
+                        children: "PRIZES & REWARDS"
                     }, void 0, false, {
                         fileName: "[project]/components/prizes-section.tsx",
-                        lineNumber: 45,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-sm md:text-base text-muted-foreground",
-                        children: "Amazing rewards await the brightest innovators at CodeZen 2.0 ✨"
+                        className: "mt-3 text-muted-foreground text-base md:text-lg font-light",
+                        children: "Win exciting prizes and get recognized for your innovation ✨"
                     }, void 0, false, {
                         fileName: "[project]/components/prizes-section.tsx",
-                        lineNumber: 51,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/prizes-section.tsx",
-                lineNumber: 44,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 max-w-5xl mx-auto mb-16",
-                children: mainPrizes.map((prize, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                        className: `glass-effect p-6 md:p-8 text-center border-primary/30 hover-glow-intense transition-all duration-300 animate-slide-in-up ${i === 0 ? "scale-105 blood-glow" : ""}`,
-                        style: {
-                            animationDelay: `${i * 0.1}s`
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(prize.icon, {
-                                className: `h-12 md:h-16 w-12 md:w-16 mx-auto mb-3 ${prize.color}`
-                            }, void 0, false, {
-                                fileName: "[project]/components/prizes-section.tsx",
-                                lineNumber: 66,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-lg md:text-2xl font-bold text-white",
-                                children: prize.place
-                            }, void 0, false, {
-                                fileName: "[project]/components/prizes-section.tsx",
-                                lineNumber: 69,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-2xl md:text-4xl font-bold text-primary mt-2",
-                                children: prize.amount
-                            }, void 0, false, {
-                                fileName: "[project]/components/prizes-section.tsx",
-                                lineNumber: 72,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, i, true, {
-                        fileName: "[project]/components/prizes-section.tsx",
-                        lineNumber: 59,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/components/prizes-section.tsx",
-                lineNumber: 57,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-3xl mx-auto mb-16",
+                className: "max-w-6xl mx-auto mb-10 relative z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-2xl md:text-3xl font-bold text-center text-primary mb-8",
-                        children: "Special Prizes"
+                        className: "text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 text-primary text-center",
+                        children: "🥇 Grand Cash Prizes"
                     }, void 0, false, {
                         fileName: "[project]/components/prizes-section.tsx",
-                        lineNumber: 81,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 md:grid-cols-2 gap-5",
-                        children: specialPrizes.map((prize, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                className: "glass-effect p-5 md:p-6 border-primary/30 text-center hover-glow-intense transition-all animate-scale-in",
-                                style: {
-                                    animationDelay: `${i * 0.1}s`
+                        className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10",
+                        children: prizes.map((prize, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 50
                                 },
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        className: "text-lg md:text-xl font-semibold text-white",
-                                        children: prize.category
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/prizes-section.tsx",
-                                        lineNumber: 91,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xl md:text-2xl font-bold text-primary mt-2",
-                                        children: prize.amount
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/prizes-section.tsx",
-                                        lineNumber: 94,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, i, true, {
-                                fileName: "[project]/components/prizes-section.tsx",
-                                lineNumber: 86,
-                                columnNumber: 13
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/components/prizes-section.tsx",
-                        lineNumber: 84,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/prizes-section.tsx",
-                lineNumber: 80,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-4xl mx-auto",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-2xl md:text-3xl font-bold text-center text-primary mb-8",
-                        children: "Other Exciting Rewards"
-                    }, void 0, false, {
-                        fileName: "[project]/components/prizes-section.tsx",
-                        lineNumber: 104,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6",
-                        children: rewards.map((reward, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                className: "glass-effect border-primary/30 p-4 md:p-5 text-center text-white text-sm md:text-base font-medium hover-glow-intense animate-slide-in-up",
-                                style: {
-                                    animationDelay: `${i * 0.07}s`
+                                animate: {
+                                    opacity: 1,
+                                    y: 0
                                 },
-                                children: reward
+                                transition: {
+                                    delay: i * 0.1,
+                                    duration: 0.2
+                                },
+                                whileHover: {
+                                    scale: 1.05
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                                    className: `p-8 md:p-10 ${cardStyles} bg-gradient-to-br ${prize.gradient} glass-effect border-primary/30 overflow-hidden hover-glow-intense cursor-pointer transition-all animate-slide-in-up
+`,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                            className: "text-6xl mb-3",
+                                            animate: {
+                                                y: [
+                                                    0,
+                                                    -10,
+                                                    0
+                                                ]
+                                            },
+                                            transition: {
+                                                repeat: Infinity,
+                                                duration: 1 + i,
+                                                ease: "easeInOut"
+                                            },
+                                            children: prize.emoji
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/prizes-section.tsx",
+                                            lineNumber: 88,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                            className: "text-2xl font-bold tracking-wide text-white",
+                                            children: prize.place
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/prizes-section.tsx",
+                                            lineNumber: 99,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-4xl font-extrabold text-primary mt-3 drop-shadow-[0_0_15px_rgba(120,0,60,1)]",
+                                            children: prize.amount
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/prizes-section.tsx",
+                                            lineNumber: 102,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/prizes-section.tsx",
+                                    lineNumber: 84,
+                                    columnNumber: 15
+                                }, this)
                             }, i, false, {
                                 fileName: "[project]/components/prizes-section.tsx",
-                                lineNumber: 109,
+                                lineNumber: 77,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/prizes-section.tsx",
-                        lineNumber: 107,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/prizes-section.tsx",
-                lineNumber: 103,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-center mt-16",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-sm md:text-base text-muted-foreground",
-                    children: "Prizes, goodies, and opportunities that make every hour of CodeZen 2.0 worth it 🚀"
-                }, void 0, false, {
-                    fileName: "[project]/components/prizes-section.tsx",
-                    lineNumber: 122,
-                    columnNumber: 9
-                }, this)
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "max-w-4xl mx-auto mb-20 text-center relative z-10",
+                initial: {
+                    opacity: 0
+                },
+                animate: {
+                    opacity: 1
+                },
+                transition: {
+                    delay: 0.3,
+                    duration: 0.4
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 text-primary text-center",
+                        children: "⭐ Category-Specific Awards"
+                    }, void 0, false, {
+                        fileName: "[project]/components/prizes-section.tsx",
+                        lineNumber: 118,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 md:grid-cols-2 gap-8",
+                        children: specialPrizes.map((sp, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                whileHover: {
+                                    scale: 1.06
+                                },
+                                transition: {
+                                    duration: 0.3
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                                    className: "p-8 border  bg-linear-to-r from-black/50 to-[#ff3366]/20 rounded-2xl backdrop-blur-md hover:shadow-[0_0_45px_rgba(255,0,92,0.4)] glass-effect border-primary/30 overflow-hidden hover-glow-intense cursor-pointer animate-slide-in-up  transition-all",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center justify-center space-x-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                className: "text-5xl",
+                                                animate: {
+                                                    scale: [
+                                                        1,
+                                                        1.1,
+                                                        1
+                                                    ]
+                                                },
+                                                transition: {
+                                                    repeat: Infinity,
+                                                    duration: 2 + i,
+                                                    ease: "easeInOut"
+                                                },
+                                                children: sp.emoji
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/prizes-section.tsx",
+                                                lineNumber: 133,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-left",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                        className: "text-xl font-semibold text-white",
+                                                        children: sp.category
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/prizes-section.tsx",
+                                                        lineNumber: 145,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-2xl font-bold text-primary mt-1 drop-shadow-[0_0_15px_rgba(120,0,60,1)]",
+                                                        children: sp.amount
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/prizes-section.tsx",
+                                                        lineNumber: 148,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/prizes-section.tsx",
+                                                lineNumber: 144,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/prizes-section.tsx",
+                                        lineNumber: 132,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/prizes-section.tsx",
+                                    lineNumber: 129,
+                                    columnNumber: 15
+                                }, this)
+                            }, i, false, {
+                                fileName: "[project]/components/prizes-section.tsx",
+                                lineNumber: 124,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/prizes-section.tsx",
+                        lineNumber: 122,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/prizes-section.tsx",
+                lineNumber: 112,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "max-w-6xl mx-auto text-center relative z-10",
+                initial: {
+                    opacity: 0
+                },
+                animate: {
+                    opacity: 1
+                },
+                transition: {
+                    delay: 1,
+                    duration: 0.8
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 text-primary text-center",
+                        children: "🎁 Perks and Swag"
+                    }, void 0, false, {
+                        fileName: "[project]/components/prizes-section.tsx",
+                        lineNumber: 166,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8",
+                        children: rewards.map((reward, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                whileHover: {
+                                    scale: 1.05,
+                                    y: -5
+                                },
+                                transition: {
+                                    duration: 0.2
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                                    className: "p-5 border glass-effect bg-black/40 text-sm md:text-base text-gray-200 text-left font-medium flex items-center duration-300 hover:shadow-[0_0_35px_rgba(120,0,10,1)] hover:border-[#ff005c]/70 hover:scale-[1.03] glass-effect border-primary/30 overflow-hidden hover-glow-intense cursor-pointer transition-all animate-slide-in-up",
+                                    children: reward
+                                }, void 0, false, {
+                                    fileName: "[project]/components/prizes-section.tsx",
+                                    lineNumber: 177,
+                                    columnNumber: 15
+                                }, this)
+                            }, i, false, {
+                                fileName: "[project]/components/prizes-section.tsx",
+                                lineNumber: 172,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/prizes-section.tsx",
+                        lineNumber: 170,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/prizes-section.tsx",
+                lineNumber: 160,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "text-center mt-16 text-gray-500 relative z-10 text-sm md:text-lg font-light",
+                initial: {
+                    opacity: 0
+                },
+                animate: {
+                    opacity: 1
+                },
+                transition: {
+                    delay: 1.3,
+                    duration: 0.8
+                },
+                children: "Prizes, goodies & experiences that make CodeZen 2.0 truly unforgettable 🚀"
             }, void 0, false, {
                 fileName: "[project]/components/prizes-section.tsx",
-                lineNumber: 121,
+                lineNumber: 189,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/prizes-section.tsx",
-        lineNumber: 43,
+        lineNumber: 46,
         columnNumber: 5
     }, this);
 }
