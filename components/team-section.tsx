@@ -899,6 +899,23 @@ const teamCategories: TeamCategory[] = [
           ],
         },
         {
+          name: "SHIVANSH GOYAL",
+          role: "Game Dev Co-Lead",
+          image: "/team/Shivansh Goyal.jpg",
+          bio: "",
+          socials: [
+            {
+              platform: "linkedin",
+              url: "https://www.linkedin.com/in/shivansh-goyal-gamedev/",
+            },
+            {
+              platform: "instagram",
+              url: "https://www.instagram.com/devils_catt_/",
+            },
+
+          ],
+        },
+        {
           name: "GARV",
           role: "Data Science Lead",
           image: "/team/garv malhotra.jpg",
@@ -985,7 +1002,7 @@ const teamCategories: TeamCategory[] = [
         {
           name: "KHUSHI TYAGI",
           role: "Anchors Team",
-          image: "/team/Khushi Tyagi.jpg",
+          image: "/team/Khushi Tyagi (2).jpg",
           bio: "Leading social media strategy and engagement",
           socials: [
             {
