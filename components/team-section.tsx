@@ -1482,7 +1482,7 @@ const teamCategories: TeamCategory[] = [
     {
       name: "YUKTI",
       role: "Event Management Member",
-      image: "/team/Yukti.JPG",
+      image: "/team/Yukti.jpg",
       bio: "Managing venue arrangements and coordination",
       socials: [
         {
@@ -1504,7 +1504,7 @@ const teamCategories: TeamCategory[] = [
     {
       name: "PRARTHANA",
       role: "Logistics Lead",
-      image: "/TEAM/prarthna-punpher.JPG",
+      image: "/TEAM/prarthna-punpher.jpg",
       bio: "Leading social media strategy and engagement",
       socials: [
         {
@@ -2108,40 +2108,55 @@ const teamCategories: TeamCategory[] = [
     }
   };
 
-export default function TeamSection() {
-  return (
-    <section id="team" className="container mx-auto px-4 py-20 text-center">
-      <div className="text-center mb-16">
-        <h2
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-glow flicker"
-          style={{ fontFamily: "Stranger Things, sans-serif" }}
-        >
-          OUR TEAM
-        </h2>
-        <p className="text-xs md:text-sm text-muted-foreground">
-          The minds behind Code Zen 2.0
-        </p>
-      </div>
-
-      <div className="space-y-20">
-        {teamCategories.map((category, cIndex) => (
-          <div key={cIndex} className="text-center">
-            <div className="flex justify-center items-center mb-10 text-primary">
-              <h3 className="text-xl md:text-3xl font-bold tracking-wide text-center">
-                {category.name}
-              </h3>
-            </div>
-
-            <div className="flex justify-center">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10 items-stretch">
+  export default function TeamSection() {
+    return (
+      <section id="team" className="container mx-auto px-4 py-20 text-center">
+        <div className="text-center mb-16">
+          <h2
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-glow flicker"
+            style={{ fontFamily: "Stranger Things, sans-serif" }}
+          >
+            OUR TEAM
+          </h2>
+          <p className="text-xs md:text-sm text-muted-foreground">
+            The minds behind Code Zen 2.0
+          </p>
+        </div>
+  
+        <div className="space-y-20">
+          {teamCategories.map((category, cIndex) => (
+            <div key={cIndex} className="text-center">
+              <div className="flex justify-center items-center mb-10 text-primary">
+                <h3 className="text-xl md:text-3xl font-bold tracking-wide">
+                  {category.name}
+                </h3>
+              </div>
+  
+              {/* ✅ FLEX WRAP CENTERED LAYOUT */}
+              <div className="flex flex-wrap justify-center gap-10">
                 {category.members.map((member, mIndex) => (
                   <div
                     key={mIndex}
-                    className="glass-effect border border-primary/30 rounded-2xl p-8 text-center w-full max-w-lg h-full hover-glow-intense hover-lift transition-all mx-auto flex flex-col justify-between"
+                    className="
+                      glass-effect
+                      border
+                      border-primary/30
+                      rounded-2xl
+                      p-6
+                      text-center
+                      w-[300px]
+                      h-[330px]
+                      hover-glow-intense
+                      hover-lift
+                      transition-all
+                      flex
+                      flex-col
+                      justify-between
+                    "
                   >
                     <div>
-                      <div className="flex justify-center mb-5">
-                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-primary/40">
+                      <div className="flex justify-center mb-4">
+                        <div className="relative w-28 h-28 rounded-full overflow-hidden border-2 border-primary/40">
                           <Image
                             src={member.image}
                             alt={member.name}
@@ -2150,18 +2165,18 @@ export default function TeamSection() {
                           />
                         </div>
                       </div>
-
-                      <h4 className="text-lg md:text-xl font-bold text-card-foreground">
+  
+                      <h4 className="text-lg font-bold text-card-foreground">
                         {member.name}
                       </h4>
-
-                      <p className="text-sm md:text-base text-primary mt-1 font-semibold">
+  
+                      <p className="text-sm text-primary mt-1 font-semibold text-center">
                         {member.role}
                       </p>
                     </div>
-
-                    {/* ✅ Social Icons – Equal Normal Size */}
-                    <div className="flex justify-center gap-3 mt-6">
+  
+                    {/* ✅ SOCIAL ICONS */}
+                    <div className="flex justify-center gap-3 mt-4">
                       {member.socials
                         .filter((s) => s.url.trim() !== "")
                         .map((social, i) => (
@@ -2187,10 +2202,12 @@ export default function TeamSection() {
                 ))}
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
+          ))}
+        </div>
+      </section>
+    );
+  }
+  
+  
+  
 
