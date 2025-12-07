@@ -1504,7 +1504,7 @@ const teamCategories: TeamCategory[] = [
     {
       name: "PRARTHANA",
       role: "Logistics Lead",
-      image: "/TEAM/prarthna-punpher.jpg",
+      image: "/team/prarthna-punpher.jpg",
       bio: "Leading social media strategy and engagement",
       socials: [
         {
