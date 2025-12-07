@@ -720,7 +720,7 @@ const teamCategories: TeamCategory[] = [
             },
             {
               platform: "github",
-              url: "",
+              url: "https://github.com/Ishaansharma23",
             }
 
           ],
