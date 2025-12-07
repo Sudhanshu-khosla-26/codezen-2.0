@@ -44,7 +44,8 @@ export default function FaqSection() {
           FAQ
         </h2>
         <p className="text-xs md:text-sm lg:text-base">
-          Frequently Asked Questions — Everything You Need to Know About CodeZen 2.0
+          Frequently Asked Questions — Everything You Need to Know About CodeZen
+          2.0
         </p>
       </div>
 
@@ -57,7 +58,7 @@ export default function FaqSection() {
             onClick={() => setExpanded(expanded === i ? null : i)}
           >
             {/* Question */}
-            <div className="p-4 md:p-6 flex items-center justify-between gap-4">
+            <div className="p-4 md:p-0 md:px-6 flex items-center justify-between gap-4">
               <h3 className="font-bold text-sm md:text-lg text-card-foreground text-balance tracking-wide">
                 {faq.q}
               </h3>
@@ -70,7 +71,7 @@ export default function FaqSection() {
 
             {/* Answer */}
             {expanded === i && (
-              <div className="px-4 md:px-6 pb-4 md:pb-6 border-t border-primary/20 pt-3 md:pt-4 animate-slide-in-down leading-relaxed">
+              <div className="px-4 md:px-6 pb-4 md:pb-2 border-t border-primary/20 pt-3 md:pt-4 animate-slide-in-down leading-relaxed">
                 <p className="text-sm md:text-base font-medium text-white">
                   {faq.a}
                 </p>

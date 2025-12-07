@@ -4,22 +4,22 @@
   },
   "devFiles": [],
   "polyfillFiles": [
-    "static/chunks/2439e_next_dist_build_polyfills_polyfill-nomodule.js"
+    "static/chunks/node_modules_next_dist_build_polyfills_polyfill-nomodule.js"
   ],
   "lowPriorityFiles": [
     "static/development/_ssgManifest.js",
     "static/development/_buildManifest.js"
   ],
   "rootMainFiles": [
-    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_49a4f7fc._.js",
-    "static/chunks/2439e_next_dist_compiled_react-dom_abc7ef2a._.js",
-    "static/chunks/2439e_next_dist_compiled_react-server-dom-turbopack_f63bd3c8._.js",
-    "static/chunks/2439e_next_dist_compiled_next-devtools_index_f7ed77c2.js",
-    "static/chunks/2439e_next_dist_compiled_3bf94c99._.js",
-    "static/chunks/2439e_next_dist_client_185456d9._.js",
-    "static/chunks/2439e_next_dist_079baf81._.js",
-    "static/chunks/2439e_@swc_helpers_cjs_794ccf36._.js",
-    "static/chunks/coding_College Project_codezen-2_0_a0ff3932._.js",
-    "static/chunks/turbopack-coding_College Project_codezen-2_0_387f403b._.js"
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_bae88007._.js",
+    "static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js",
+    "static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_9212ccad._.js",
+    "static/chunks/node_modules_next_dist_compiled_next-devtools_index_1dd7fb59.js",
+    "static/chunks/node_modules_next_dist_compiled_a0e4c7b4._.js",
+    "static/chunks/node_modules_next_dist_client_aaee43fe._.js",
+    "static/chunks/node_modules_next_dist_7a8122d0._.js",
+    "static/chunks/node_modules_@swc_helpers_cjs_d80fb378._.js",
+    "static/chunks/_a0ff3932._.js",
+    "static/chunks/turbopack-_45210fd5._.js"
   ]
 }
