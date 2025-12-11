@@ -107,21 +107,21 @@ const Navbar = () => {
   return (
     <>
       {/* Scroll Progress Bar */}
-      <div
+      {/* <div
         className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary/80 to-primary z-50 transition-transform origin-left"
         style={{
           transform: `scaleX(${scrollProgress / 100})`,
         }}
-      />
+      /> */}
 
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? "glass-effect border-b border-primary/20"
-            : "bg-background/50 backdrop-blur-sm border-b border-primary/10"
+            ? "glass-effect "
+            : "backdrop-blur-sm "
         }`}
       >
-        <div className="container mx-auto px-4 h-20 flex items-center justify-center">
+        <div className="container mx-auto px-4 h-18 flex items-center justify-center">
           {/* Desktop Navigation */}
           <div className="hidden md:flex justify-center  items-center gap-1">
             {navItems.map((item) => (

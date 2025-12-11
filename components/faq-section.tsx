@@ -38,15 +38,18 @@ export default function FaqSection() {
     <section className="container mx-auto px-4 py-16 md:py-20">
       <div className="text-center mb-10 md:mb-12">
         <h2
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-glow text-balance"
-          style={{ fontFamily: "Stranger Things, sans-serif" }}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4  text-balance"
+          style={{ fontFamily: "Benguiat, sans-serif" }}
         >
-          FAQ
+         Frequently Asked 
         </h2>
-        <p className="text-xs md:text-sm lg:text-base">
-          Frequently Asked Questions — Everything You Need to Know About CodeZen
-          2.0
-        </p>
+        <h2
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-primary  text-balance"
+          style={{ fontFamily: "Benguiat, sans-serif" }}
+        >
+         Questions
+        </h2>
+     
       </div>
 
       <div className="max-w-3xl mx-auto space-y-2 md:space-y-4">

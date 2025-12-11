@@ -11,6 +11,7 @@ import StatsSection from "@/components/stats-section";
 import FaqSection from "@/components/faq-section";
 import FooterSection from "@/components/footer-section";
 import TimelineSection from "@/components/timeline-section";
+import AboutSection from "@/components/about-section";
 import TeamSection from "@/components/team-section";
 
 export default function CodeZenPage() {
@@ -74,13 +75,17 @@ export default function CodeZenPage() {
         <div id="hero">
           <HeroSection />
         </div>
-        <EventDetails />
-        <StatsSection />
-        <div id="timeline">
-          <TimelineSection />
+        <div id="about">
+          <AboutSection />
         </div>
+        {/* <EventDetails /> */}
+        {/* <StatsSection /> */}
+      
         <div id="tracks">
           <TracksSection />
+        </div>
+        <div id="timeline">
+          <TimelineSection />
         </div>
         <div id="prizes">
           <PrizesSection />

@@ -2113,10 +2113,14 @@ const teamCategories: TeamCategory[] = [
       <section id="team" className="container mx-auto px-4 py-20 text-center">
         <div className="text-center mb-16">
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-glow flicker"
-            style={{ fontFamily: "Stranger Things, sans-serif" }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 flicker"
+            style={{ fontFamily: "Benguiat, sans-serif" }}
           >
-            OUR TEAM
+            OUR 
+            <span className="text-primary pl-2" 
+             style={{ fontFamily: "Benguiat, sans-serif" }}>
+            TEAM
+              </span> 
           </h2>
           <p className="text-xs md:text-sm text-muted-foreground">
             The minds behind Code Zen 2.0
@@ -2133,7 +2137,7 @@ const teamCategories: TeamCategory[] = [
               </div>
   
               {/* ✅ FLEX WRAP CENTERED LAYOUT */}
-              <div className="flex flex-wrap justify-center gap-10">
+              <div className="flex flex-wrap justify-center gap-10 gap-x-6">
                 {category.members.map((member, mIndex) => (
                   <div
                     key={mIndex}
@@ -2144,8 +2148,8 @@ const teamCategories: TeamCategory[] = [
                       rounded-2xl
                       p-6
                       text-center
-                      w-[300px]
-                      h-[330px]
+                      w-[280px]
+                      h-[310px]
                       hover-glow-intense
                       hover-lift
                       transition-all

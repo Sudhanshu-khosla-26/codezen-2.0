@@ -1,8 +1,6 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import {
 	Calendar,
 	Clock,
@@ -16,117 +14,68 @@ import {
 export default function TimelineSection() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true, margin: "-100px" });
+	const [show, setShow] = useState(false);
 
 	const timelineEvents = [
 		{
-			date: "September 25, 2025",
-			time: "6:00 PM",
-			title: "Registration Opens",
-			description: "Team registration and project submission portal goes live",
-			icon: <Users className="w-5 h-5" />,
-			color: "from-blue-400 to-cyan-500",
-			last: false,
+			day: "Day 1",
+			time: "07:00 AM",
+			title: "REGISTRATION STARTS",
+			icon: <Users className="w-6 h-6" />,
 		},
 		{
-			date: "September 26, 2025",
-			time: "11:59 PM",
-			title: "Registration Closes",
-			description: "Last chance to register your team and secure your spot",
-			icon: <Clock className="w-5 h-5" />,
-			color: "from-orange-400 to-red-500",
-			last: false,
+			day: "Day 2",
+			time: "09:00 AM",
+			title: "INAUGURATION CEREMONY [SIDE-QUEST & MEME-CONTEST]",
+			icon: <Trophy className="w-6 h-6" />,
 		},
 		{
-			date: "September 27, 2025",
-			time: "9:00 AM",
-			title: "Opening Ceremony",
-			description: "Welcome address, rules briefing, and team introductions",
-			icon: <Zap className="w-5 h-5" />,
-			color: "from-red-400 to-emerald-500",
-			last: false,
-		},
-
-		{
-			date: "September 27, 2025",
-			time: "10:00 AM",
-			title: "Hacking Begins",
-			description:
-				"8 hours of intense coding, innovation, and collaboration starts",
-			icon: <Trophy className="w-5 h-5" />,
-			color: "from-purple-400 to-pink-500",
-			last: false,
+			day: "Day 1",
+			time: "12:00 PM",
+			title: "HACKING BEGINS",
+			icon: <Zap className="w-6 h-6" />,
 		},
 		{
-			date: "September 27, 2025",
-			time: "1:00 PM",
-			title: "Lunch & Networking",
-			description: "Fuel up and connect with fellow participants and mentors",
-			icon: <Coffee className="w-5 h-5" />,
-			color: "from-yellow-400 to-orange-500",
-			last: false,
+			day: "Day 2",
+			time: "01:00 PM",
+			title: "LUNCH BREAK",
+			icon: <Coffee className="w-6 h-6" />,
 		},
 		{
-			date: "September 27, 2025",
-			time: "7:00 PM",
-			title: "Mentor Sessions",
-			description: "One-on-one guidance from industry experts and tech leaders",
-			icon: <Users className="w-5 h-5" />,
-			color: "from-teal-400 to-red-500",
-			last: false,
+			day: "Day 1",
+			time: "06:00 PM",
+			title: "MENTOR SESSIONS",
+			icon: <Users className="w-6 h-6" />,
 		},
 		{
-			date: "September 28, 2025",
+			day: "Day 2",
 			time: "12:00 AM",
-			title: "Midnight Snacks",
-			description: "Late night fuel to keep the coding momentum going strong",
-			icon: <Coffee className="w-5 h-5" />,
-			color: "from-indigo-400 to-purple-500",
-			last: false,
+			title: "MIDNIGHT SNACKS",
+			icon: <Coffee className="w-6 h-6" />,
 		},
 		{
-			date: "September 28, 2025",
-			time: "8:00 AM",
-			title: "Breakfast & Check-in",
-			description: "Morning refreshments and progress check with teams",
-			icon: <Coffee className="w-5 h-5" />,
-			color: "from-lime-400 to-red-500",
-			last: false,
+			day: "Day 1",
+			time: "08:00 AM",
+			title: "BREAKFAST & CHECK-IN",
+			icon: <Coffee className="w-6 h-6" />,
 		},
 		{
-			date: "September 28, 2025",
-			time: "6:00 PM",
-			title: "Project Submission",
-			description: "Final submission deadline for all hackathon projects",
-			icon: <Clock className="w-5 h-5" />,
-			color: "from-red-400 to-pink-500",
-			last: false,
+			day: "Day 2",
+			time: "06:00 PM",
+			title: "PROJECT SUBMISSION",
+			icon: <Clock className="w-6 h-6" />,
 		},
 		{
-			date: "September 29, 2025",
+			day: "Day 1",
 			time: "10:00 AM",
-			title: "Project Presentations",
-			description: "Teams present their solutions to judges and audience",
-			icon: <Award className="w-5 h-5" />,
-			color: "from-cyan-400 to-blue-500",
-			last: false,
+			title: "PROJECT PRESENTATIONS",
+			icon: <Trophy className="w-6 h-6" />,
 		},
 		{
-			date: "September 29, 2025",
-			time: "2:00 PM",
-			title: "Judging & Deliberation",
-			description: "Expert panel evaluates projects and selects winners",
-			icon: <Trophy className="w-5 h-5" />,
-			color: "from-emerald-400 to-teal-500",
-			last: false,
-		},
-		{
-			date: "September 29, 2025",
-			time: "4:00 PM",
-			title: "Closing Ceremony",
-			description: "Winner announcements, prize distribution, and celebration",
-			icon: <Award className="w-5 h-5" />,
-			color: "from-yellow-400 to-orange-500",
-			last: false,
+			day: "Day 2",
+			time: "04:00 PM",
+			title: "CLOSING CEREMONY",
+			icon: <Award className="w-6 h-6" />,
 		},
 	];
 
@@ -141,10 +90,10 @@ export default function TimelineSection() {
 	};
 
 	const itemVariants = {
-		hidden: { x: -50, opacity: 0 },
+		hidden: { opacity: 0, x: -50 },
 		visible: {
-			x: 0,
 			opacity: 1,
+			x: 0,
 			transition: {
 				duration: 0.6,
 				ease: "easeOut",
@@ -152,108 +101,235 @@ export default function TimelineSection() {
 		},
 	};
 
-	return timelineEvents.length === 0 ? (
-		<>
-			<section
-				id="timeline"
-				className="relative py-24 px-6 md:px-12 flex flex-col items-center justify-center min-h-[200px]"
+	const itemVariantsRight = {
+		hidden: { opacity: 0, x: 50 },
+		visible: {
+			opacity: 1,
+			x: 0,
+			transition: {
+				duration: 0.6,
+				ease: "easeOut",
+			},
+		},
+	};
+
+	return !show ? (
+		<motion.div
+			className="text-center mb-12 md:mb-16"
+			initial={{ opacity: 0, y: -40 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.8 }}
+		>
+			<h1
+				className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold  flicker tracking-wider animate-scale-in text-balance"
+				style={{
+					fontFamily: "Benguiat, sans-serif",
+				}}
 			>
-				<div className="max-w-2xl mx-auto text-center">
-					<h2
-						className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-glow text-balance"
-						style={{ fontFamily: "Stranger Things, sans-serif" }}
-					>
-						EVENT <span>TIMELINE</span>
-					</h2>
-					<div className="text-gray-700 text-xl md:text-2xl font-semibold">
-						<p className="text-2xl md:text-3xl font-bold text-gray-400 animate-pulse">
-							To be revealed soon!
-						</p>
-					</div>
-				</div>
-			</section>
-		</>
+				EVENT 
+			<span className="text-primary pl-2">
+				TIMELINE
+				</span> 
+			</h1>
+			<p className="mt-3 text-muted-foreground text-lg md:text-2xl">
+				to be revealed soon! 
+			</p>
+		</motion.div>
 	) : (
 		<section
-			id="timeline"
-			className="relative container mx-auto px-4 py-16 md:py-20"
 			ref={ref}
+			className="relative overflow-hidden bg-black text-white py-20 px-6 md:px-12"
 		>
-			<motion.div
-				variants={containerVariants}
-				initial="hidden"
-				animate={isInView ? "visible" : "hidden"}
-				className="max-w-4xl mx-auto"
-			>
+			<style>{`
+        @keyframes flicker {
+          0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+            opacity: 1;
+            text-shadow: 0 0 10px #ff1515, 0 0 20px #ff1515, 0 0 30px #ff1515, 0 0 40px #ff1515;
+          }
+          20%, 24%, 55% {
+            opacity: 0.8;
+            text-shadow: 0 0 5px #ff1515, 0 0 10px ##ff1515;
+          }
+        }
+        
+        .text-glow {
+          animation: flicker 5s infinite;
+        }
+        
+        .glass-effect {
+          backdrop-filter: blur(10px);
+          background: rgba(0, 0, 0, 0.6);
+        }
+      `}</style>
+
+			{/* Background Effects */}
+			<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,0,92,0.12)_0%,transparent_70%)]" />
+
+			<div className="max-w-7xl mx-auto relative z-10">
+				{/* Header */}
 				<motion.div
-					variants={itemVariants}
-					className="text-center mb-20"
+					className="text-center mb-12 md:mb-16"
+					initial={{ opacity: 0, y: -40 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8 }}
 				>
-					<h2
-						className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-glow text-balance"
-						style={{ fontFamily: "Stranger Things, sans-serif" }}
+					<h1
+						className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-glow flicker tracking-wider animate-scale-in text-balance"
+						style={{
+							fontFamily: "Benguiat, sans-serif",
+						}}
 					>
-						EVENT <span>TIMELINE</span>
-					</h2>
-					<p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-						Your complete guide to the 48-hour journey of innovation,
-						collaboration, and competition.
+						EVENT TIMELINE
+					</h1>
+					<p className="mt-3 text-muted-foreground text-base md:text-lg font-light">
+						Mark your calendar for these important dates ✨
 					</p>
 				</motion.div>
 
-				<div className="relative">
-					{/* Timeline Line */}
-					<div className="absolute left-8 top-0 bottom-14 w-0.5 bg-gradient-to-b from-red-400 via-emerald-500 to-red-400"></div>
+				{/* Day Tabs */}
+				<motion.div
+					className="flex justify-center gap-6 md:gap-8 mb-12 md:mb-16"
+					initial={{ opacity: 0, scale: 0.9 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ delay: 0.3, duration: 0.6 }}
+				>
+					<div
+						className="px-6 md:px-8 py-3 border-2 border-[##ff1515] text-white font-bold tracking-wider bg-black rounded-lg"
+						style={{
+							boxShadow: "0 0 20px rgba(255, 0, 92, 0.5)",
+						}}
+					>
+						Day 1
+					</div>
+					<div className="px-6 md:px-8 py-3 border-2 border-[#ff005c]/40 text-gray-500 font-bold tracking-wider bg-black/40 rounded-lg">
+						Day 2
+					</div>
+				</motion.div>
 
-					<div className="space-y-8">
-						{timelineEvents.map((event, index) => (
+				{/* Timeline */}
+				<motion.div
+					variants={containerVariants}
+					initial="hidden"
+					animate={isInView ? "visible" : "hidden"}
+					className="relative"
+				>
+					{/* Center vertical line */}
+					<div
+						className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-[#b00000]"
+						style={{
+							boxShadow: "0 0 10px #ff005c",
+						}}
+					/>
+
+					{timelineEvents.map((event, index) => {
+						const isLeft = index % 2 === 0;
+
+						return (
 							<motion.div
 								key={index}
-								variants={itemVariants}
-								whileHover={{ scale: 1.02, x: 10 }}
-								className="relative flex items-start space-x-6"
+								variants={isLeft ? itemVariants : itemVariantsRight}
+								className="relative mb-8 md:mb-10 last:mb-0"
 							>
 								{/* Timeline Dot */}
-								<div className="relative z-10">
-									<div
-										className={`w-16 h-16 bg-gradient-to-r ${event.color} rounded-full flex items-center justify-center shadow-lg border-4 border-white`}
+								<div className="absolute left-1/2 transform -translate-x-1/2 top-8 z-10">
+									<motion.div
+										className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#b00000] flex items-center justify-center text-neutral-300"
+										style={{
+											boxShadow: "0 0 20px #eb2d32, 0 0 30px #ff005c",
+										}}
+										animate={{
+											boxShadow: [
+												"0 0 20px #b00000, 0 0 30px #b00000",
+												"0 0 30px #b00000, 0 0 45px #b00000",
+												"0 0 20px #b00000, 0 0 30px #b00000",
+											],
+										}}
+										transition={{
+											duration: 2,
+											repeat: Infinity,
+											ease: "easeInOut",
+										}}
 									>
-										<div className="text-black">{event.icon}</div>
-									</div>
+										{event.icon}
+									</motion.div>
 								</div>
 
 								{/* Event Card */}
-								<div className="flex-1">
-									<motion.div className="border rounded-2xl p-6 shadow-lg hover:shadow-red-500/10 transition-all duration-300 group relative overflow-hidden">
-										<div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-										<div className="relative z-10">
-											<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-												<h3 className="text-lg font-black mb-2 sm:mb-0">
-													{event.title}
-												</h3>
-												<div className="flex items-center space-x-4 text-sm">
-													<div className="flex items-center space-x-1 text-gray-600">
-														<Calendar className="w-4 h-4" />
-														<span>{event.date}</span>
-													</div>
-													<div className="flex items-center space-x-1 text-red-400 font-bold">
-														<Clock className="w-4 h-4" />
-														<span>{event.time}</span>
-													</div>
-												</div>
+								<div
+									className={`flex ${isLeft ? "justify-start" : "justify-end"}`}
+								>
+									<div
+										className={`w-full md:w-5/12 ${
+											isLeft ? "md:pr-12 lg:pr-16" : "md:pl-12 lg:pl-16"
+										}`}
+									>
+										<motion.div
+											className="p-6 md:p-8 border-2 border-[#b00000]/40 relative bg-black/60 glass-effect rounded-3xl cursor-pointer transition-all duration-500"
+											style={{
+												boxShadow: "0 0 20px rgba(255, 0, 92, 0.3)",
+											}}
+											whileHover={{
+												scale: 1.05,
+												boxShadow: "0 0 45px rgba(255, 0, 92, 0.8)",
+												borderColor: "rgba(255, 0, 92, 0.7)",
+											}}
+											transition={{ duration: 0.3 }}
+										>
+											{/* Time badge */}
+											<div
+												className="inline-flex items-center gap-2 px-4 py-2 mb-4 border border-red-500/60 rounded-lg"
+												style={{
+													backgroundColor: "rgba(255, 0, 92, 0.1)",
+												}}
+											>
+												<Clock className="w-4 h-4 text-[#ba0000]" />
+												<span className="text-[#ba0000] font-bold text-sm tracking-wider">
+													{event.time}
+												</span>
 											</div>
-											<p className="text-gray-700 text-sm leading-relaxed">
-												{event.description}
-											</p>
-										</div>
-									</motion.div>
+
+											{/* Title */}
+											<h3
+												className="text-xl md:text-2xl font-bold text-white mb-2 tracking-wider"
+												style={{
+													fontFamily: "'Courier New', monospace",
+													letterSpacing: "0.05em",
+												}}
+											>
+												{event.title}
+											</h3>
+
+											{/* Corner decorations */}
+											<div
+												className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#ff005c]"
+												style={{
+													boxShadow: "0 0 10px #ff005c",
+												}}
+											/>
+											<div
+												className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#ff005c]/70"
+												style={{
+													boxShadow: "0 0 10px #ff005c",
+												}}
+											/>
+										</motion.div>
+									</div>
 								</div>
 							</motion.div>
-						))}
-					</div>
-				</div>
-			</motion.div>
+						);
+					})}
+				</motion.div>
+
+				{/* Footer */}
+				<motion.div
+					className="text-center mt-16 text-gray-500 relative z-10 text-sm md:text-lg font-light"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 1.3, duration: 0.8 }}
+				>
+					Your complete guide to the hackathon journey 🚀
+				</motion.div>
+			</div>
 		</section>
 	);
 }
