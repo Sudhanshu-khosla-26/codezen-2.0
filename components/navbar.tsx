@@ -4,13 +4,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "#about" },
-  { name: "Tracks", href: "#tracks" },
-  { name: "Timeline", href: "#timeline" },
-  { name: "Prizes", href: "#prizes" },
-  { name: "Sponsors", href: "#sponsors" },
-  { name: "Team", href: "#team" },
+  { name: "HOME", href: "/" },
+  { name: "ABOUT", href: "#about" },
+  { name: "TRACKS", href: "#tracks" },
+  { name: "TIMELINE", href: "#timeline" },
+  { name: "PRIZES", href: "#prizes" },
+  { name: "SPONSORS", href: "#sponsors" },
+  { name: "TEAM", href: "#team" },
   { name: "FAQ", href: "#faq" },
 ];
 
@@ -20,7 +20,6 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("/");
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  // Load Devfolio script dynamically
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -32,12 +31,10 @@ const Navbar = () => {
     };
   }, []);
 
-  // Handle scroll and section detection
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      // Calculate scroll progress
       const winScroll = document.documentElement.scrollTop;
       const height =
         document.documentElement.scrollHeight -
@@ -45,7 +42,6 @@ const Navbar = () => {
       const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
       setScrollProgress(scrolled);
 
-      // Detect active section
       const sections = navItems.map((item) =>
         item.href.startsWith("#") ? document.querySelector(item.href) : null
       );
@@ -68,7 +64,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Prevent scrolling when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => {
@@ -76,7 +71,6 @@ const Navbar = () => {
     };
   }, [isOpen]);
 
-  // Handle smooth scrolling
   const handleNavClick = useCallback(
     (e: React.MouseEvent<HTMLDivElement>, href: string) => {
       e.preventDefault();
@@ -106,14 +100,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Scroll Progress Bar */}
-      {/* <div
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary/80 to-primary z-50 transition-transform origin-left"
-        style={{
-          transform: `scaleX(${scrollProgress / 100})`,
-        }}
-      /> */}
-
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           isScrolled
@@ -122,7 +108,6 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-4 h-18 flex items-center justify-center">
-          {/* Desktop Navigation */}
           <div className="hidden md:flex justify-center  items-center gap-1">
             {navItems.map((item) => (
               <Link key={item.name} href={item.href}>
@@ -133,7 +118,7 @@ const Navbar = () => {
                       : "text-foreground hover:text-primary"
                   }`}
                   style={{ fontFamily: "Benguiat, sans-serif" }}
-                  whileHover={{ y: -2 }}
+                  whileHover={{ y: -2, color: 'rgb(220, 20, 60)' }}
                   onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.name}
@@ -152,19 +137,19 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* Desktop Devfolio Button */}
-            <div
-              className="apply-button ml-4 glass-effect blood-glow hover-lift transition-all"
-              data-hackathon-slug="codezen2025"
-              data-button-theme="dark-inverted"
-              style={{
-                height: "44px",
-                width: "180px",
-              }}
-            />
+            <Link href="https://www.namespace.world/events/AFYYA7?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnlueXbe9hiF1Tp1uY-MC62l15C19FuV9UMMLWrfH3_mjaKHaR-1IAoL0xsdI_aem_WGWwQcUVmP7K0gSJwgXHUw" passHref>
+              <motion.a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-4 px-6 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 font-squids tracking-wide text-white bg-red-600 hover:bg-red-700 shadow-lg"
+                style={{ fontFamily: "Benguiat, sans-serif" }}
+                whileHover={{ y: -2, boxShadow: "0px 10px 20px rgba(255, 0, 0, 0.5)" }}
+              >
+                REGISTER
+              </motion.a>
+            </Link>
           </div>
 
-          {/* Mobile menu button */}
           <motion.button
             className="md:hidden p-2 text-foreground hover:bg-primary/10 rounded-lg transition-all hover:scale-110 active:scale-95"
             onClick={() => setIsOpen(!isOpen)}
@@ -180,7 +165,6 @@ const Navbar = () => {
           </motion.button>
         </div>
 
-        {/* Mobile Navigation */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -210,15 +194,16 @@ const Navbar = () => {
                   </Link>
                 ))}
 
-                {/* Mobile Devfolio Button */}
-                <div
-                  className="apply-button w-full mt-2 glass-effect blood-glow"
-                  data-hackathon-slug="codezen2025"
-                  data-button-theme="dark-inverted"
-                  style={{
-                    height: "44px",
-                  }}
-                />
+                <Link href="https://www.namespace.world/events/AFYYA7?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnlueXbe9hiF1Tp1uY-MC62l15C19FuV9UMMLWrfH3_mjaKHaR-1IAoL0xsdI_aem_WGWwQcUVmP7K0gSJwgXHUw" passHref>
+                  <motion.a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full text-center mt-2 px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 text-white bg-red-600 hover:bg-red-700 shadow-lg"
+                    style={{ fontFamily: "Benguiat, sans-serif" }}
+                  >
+                    REGISTER
+                  </motion.a>
+                </Link>
               </div>
             </motion.div>
           )}
