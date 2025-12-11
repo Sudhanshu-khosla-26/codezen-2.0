@@ -51,10 +51,11 @@ export default function TracksSection() {
     >
       <div className="text-center mb-10 md:mb-16">
         <h2
-          className="text-3xl sm:text-4xl flex flex-row gap-3 justify-center md:text-5xl font-bold mb-3 "
+          className="text-3xl sm:text-4xl flex flex-col md:flex-row gap-3 justify-center md:text-5xl font-bold mb-3 "
           style={{ fontFamily: "Benguiat, sans-serif" }}
         >
           HACKATHON 
+          
           <span className="text-primary">TRACKS</span>
         </h2>
         <p className="text-sm text-muted-foreground">
@@ -81,9 +82,9 @@ export default function TracksSection() {
               whileHover={{ scale: 1.05, y: -5, boxShadow: "0 0 25px rgba(220, 20, 60, 0.5)" }}
               className="track-card group relative glass-card shine-effect rounded-xl p-6 text-center h-full hover-lift border-primary/20 hover:border-primary/50 transition-all duration-300"
             >
-              <Badge className="absolute animate-bounce -top-2 -right-2 bg-accent text-accent-foreground text-[10px] px-2 py-0.5 z-10">
+              {/* <Badge className="absolute animate-bounce -top-2 -right-2 bg-accent text-accent-foreground text-[10px] px-2 py-0.5 z-10">
                 Sponsored
-              </Badge>
+              </Badge> */}
               <div className="icon-glow w-14 h-14 mx-auto mb-4 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300">
                 <track.icon className="h-7 w-7 text-primary group-hover:text-accent transition-colors duration-300" />
               </div>

@@ -1,5 +1,6 @@
 import { Users, Trophy, Coins, Utensils } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const AboutSection = () => {
   const stats = [
@@ -78,7 +79,7 @@ const AboutSection = () => {
               🔥 The Experience
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              CODEZEN 2025 brings together the brightest minds for an intense 36-hour hackathon experience. Network with industry experts, collaborate with passionate developers, and push the boundaries of what's possible.
+              CODEZEN 2026 brings together the brightest minds for an intense 36-hour hackathon experience. Network with industry experts, collaborate with passionate developers, and push the boundaries of what's possible.
             </p>
           </motion.div>
 
@@ -94,6 +95,41 @@ const AboutSection = () => {
               Whether you're a seasoned developer or just starting your journey, CODEZEN offers mentorship, resources, and the platform to turn your wildest ideas into reality. Win prizes, gain recognition, and launch your next big project.
             </p>
           </motion.div>
+        </motion.div>
+
+        <motion.div className="text-center mt-16" variants={fadeInUp}>
+          <h3 className="text-2xl font-bold text-foreground mb-4">Our Legacy</h3>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg">
+            We have a proud history of hosting successful hackathons, including Code Synthesis and the previous edition of CodeZen. Each event has brought together talented individuals to create innovative solutions and foster a vibrant tech community.
+          </p>
+        </motion.div>
+
+        <motion.div className="text-center mt-16" variants={fadeInUp}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4" style={{ fontFamily: "Benguiat, sans-serif" }}>
+            BROUGHT TO YOU
+            <span className="text-primary pl-2">
+              BY
+            </span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg mb-8">
+            Meet the institutions and team behind CodeZen
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="glass-card shine-effect rounded-2xl p-6 sm:p-8 hover-lift flex flex-col items-center">
+              <Image src="/about/college.jpg" alt="Host Logo" width={400} height={200} className="mb-4"/>
+              <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">HOSTED BY</h3>
+              <p className="text-muted-foreground leading-relaxed text-center">
+                GURU TEGH BAHADUR 4TH CENTENARY ENGINEERING COLLEGE
+              </p>
+            </div>
+            <div className="glass-card shine-effect rounded-2xl p-6 sm:p-8 hover-lift flex flex-col items-center">
+              <Image src="/about/organizer.jpg" alt="Organizer Logo" width={400} height={200} className="mb-4"/>
+              <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">ORGANIZED BY</h3>
+              <p className="text-muted-foreground leading-relaxed text-center">
+                CODE-GEEKS TEAM
+              </p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </motion.section>

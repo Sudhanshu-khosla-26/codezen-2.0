@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 export default function LoadingScreen() {
   const [progress, setProgress] = useState(0);
@@ -36,20 +36,20 @@ export default function LoadingScreen() {
             key={i}
             className="absolute bg-red-600 rounded-full"
             style={{
-              width: `${Math.random() * 3 + 1}px`,
-              height: `${Math.random() * 3 + 1}px`,
+              width: `${Math.random() * 8 + 1}px`,
+              height: `${Math.random() * 8 + 1}px`,
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
+              opacity: Math.random() * 0.5 + 0.1,
             }}
             animate={{
               y: [0, Math.random() * 20 - 10, 0],
               x: [0, Math.random() * 20 - 10, 0],
-              opacity: [0, Math.random(), 0],
             }}
             transition={{
-              duration: Math.random() * 5 + 5,
+              duration: Math.random() * 10 + 10,
               repeat: Infinity,
-              ease: "linear",
+              ease: 'linear',
             }}
           />
         ))}
@@ -75,7 +75,7 @@ export default function LoadingScreen() {
         <div className="w-64 h-1 bg-gray-800 rounded-full overflow-hidden border border-red-600/50 mx-auto mt-8">
           <motion.div
             className="h-full bg-red-600"
-            style={{ boxShadow: "0 0 10px rgba(255, 0, 0, 0.8)" }}
+            style={{ boxShadow: '0 0 10px rgba(255, 0, 0, 0.8)' }}
             initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}
             transition={{ duration: 0.5, ease: 'linear' }}

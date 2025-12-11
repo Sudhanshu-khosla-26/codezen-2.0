@@ -151,7 +151,7 @@ const Navbar = () => {
           </div>
 
           <motion.button
-            className="md:hidden p-2 text-foreground hover:bg-primary/10 rounded-lg transition-all hover:scale-110 active:scale-95"
+            className="md:hidden p-2 text-foreground hover:bg-primary/10 rounded-lg transition-all hover:scale-110 active:scale-95 ml-auto"
             onClick={() => setIsOpen(!isOpen)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

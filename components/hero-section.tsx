@@ -10,15 +10,15 @@ const HeroSection = () => {
   };
 
   const stats = [
-    { icon: Users, value: "3000+ Participants", label: "", sublabel: "From across India" },
-    { icon: Trophy, value: "₹3,00,000+", label: "", sublabel: "In Prizes" },
-    { icon: MessageCircle, value: "JOIN Discord", label: "", sublabel: "Connect with Teams" },
+    { icon: Users, value: "10,000+ Participants", label: "", sublabel: "From across India" },
+    { icon: Trophy, value: "10,00,000+", label: "", sublabel: "In Prizes" },
+    { icon: MessageCircle, value: "JOIN WHATSAPP", label: "", sublabel: "Connect with Teams" },
   ];
 
   const eventDetails = [
-    { icon: Calendar, text: "Feb 28 - Mar 1, 2025" },
+    { icon: Calendar, text: "Feb 28 - Mar 1, 2026" },
     { icon: Clock, text: "36 Hours" },
-    { icon: MapPin, text: "Delhi, India" },
+    { icon: MapPin, text: "GTB4CEC, Delhi" },
   ];
 
   const containerVariants = {
@@ -63,6 +63,7 @@ const HeroSection = () => {
               >
                 CODEZEN
               </motion.span>
+              <br className="md:hidden"/>
               <span
                 className="text-foreground text-8xl ml-2 sm:ml-4 text-glow"
                 style={{ fontFamily: "Benguiat, sans-serif" }}
@@ -90,7 +91,7 @@ const HeroSection = () => {
             {eventDetails.map((detail, index) => (
               <motion.div
                 key={index}
-                className="flex p-1 px-4 rounded-full glass-card glass-effect hover-lift items-center gap-2 text-muted-foreground"
+                className="flex p-1 px-4 rounded-full glass-card glass-effect hover-lift items-center gap-2 text-muted-foreground shine-effect"
                 whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(220, 20, 60, 0.5)" }}
               >
                 <detail.icon className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
@@ -106,7 +107,7 @@ const HeroSection = () => {
             {stats.map((stat, index) => (
               <motion.div
                 key={index}
-                className="stat-card group p-4 text-center transition-all"
+                className="stat-card group p-4 text-center transition-all shine-effect"
                 whileHover={{ scale: 1.05, y: -5 }}
               >
                 <stat.icon className="h-6 w-6 mx-auto mb-2 text-primary group-hover:text-accent transition-colors" />
@@ -124,18 +125,19 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center pt-2"
             variants={itemVariants}
           >
-            <Button
-              size="lg"
-              className="blood-glow pulse-glow cursor-pointer px-8 py-6 text-base font-bold bg-primary hover:bg-primary/90 text-primary-foreground transition-all"
-              onClick={() => scrollToSection("register")}
-            >
-              <Rocket className="mr-2 h-5 w-5" />
-              Register Now
-            </Button>
+            <a href="https://www.namespace.world/events/AFYYA7?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnlueXbe9hiF1Tp1uY-MC62l15C19FuV9UMMLWrfH3_mjaKHaR-1IAoL0xsdI_aem_WGWwQcUVmP7K0gSJwgXHUw">
+              <Button
+                size="lg"
+                className="blood-glow w-full pulse-glow cursor-pointer px-8 py-6 text-base font-bold bg-primary hover:bg-primary/90 text-primary-foreground transition-all"
+              >
+                <Rocket className="mr-2 h-5 w-5" />
+                Register Now
+              </Button>
+            </a>
             <Button
               size="lg"
               variant="outline"
-              className="glass-card px-8 py-6 text-base cursor-pointer font-bold border-primary/40 hover:border-primary hover:bg-primary/10 transition-all"
+              className="glass-card px-8  py-6 text-base cursor-pointer font-bold border-primary/40 hover:border-primary hover:bg-primary/10 transition-all"
               onClick={() => scrollToSection("tracks")}
             >
               <Users className="mr-2 h-5 w-5" />
