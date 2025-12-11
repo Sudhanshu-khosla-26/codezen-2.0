@@ -1,105 +1,93 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function LoadingScreen() {
   const [progress, setProgress] = useState(0);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prev) => {
-        if (prev >= 90) return prev;
-        return prev + Math.random() * 30;
+        if (prev >= 100) {
+          clearInterval(interval);
+          setTimeout(() => setShow(false), 1000); // Wait for fade out
+          return 100;
+        }
+        return prev + Math.random() * 20;
       });
-    }, 200);
+    }, 300);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="fixed inset-0 bg-background flex items-center justify-center overflow-hidden z-50">
-      {/* Animated background */}
+    <motion.div
+      className={`fixed inset-0 bg-black flex items-center justify-center overflow-hidden z-[100] ${!show && 'pointer-events-none'}`}
+      initial={{ opacity: 1 }}
+      animate={{ opacity: show ? 1 : 0 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}
+    >
+      {/* Stranger Things inspired background */}
       <div className="absolute inset-0">
-        {[...Array(50)].map((_, i) => (
-          <div
+        {[...Array(100)].map((_, i) => (
+          <motion.div
             key={i}
-            className="absolute rounded-full animate-pulse"
+            className="absolute bg-red-600 rounded-full"
             style={{
-              width: `${Math.random() * 100 + 20}px`,
-              height: `${Math.random() * 100 + 20}px`,
-              backgroundColor: `rgba(220, 20, 60, ${
-                Math.random() * 0.1 + 0.05
-              })`,
+              width: `${Math.random() * 3 + 1}px`,
+              height: `${Math.random() * 3 + 1}px`,
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animation: `pulse ${Math.random() * 3 + 2}s ease-in-out infinite`,
+            }}
+            animate={{
+              y: [0, Math.random() * 20 - 10, 0],
+              x: [0, Math.random() * 20 - 10, 0],
+              opacity: [0, Math.random(), 0],
+            }}
+            transition={{
+              duration: Math.random() * 5 + 5,
+              repeat: Infinity,
+              ease: "linear",
             }}
           />
         ))}
       </div>
 
-      {/* Center content */}
       <div className="relative z-10 text-center px-4">
-        {/* Animated title */}
-        <div className="mb-8 md:mb-12">
-          <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-glow flicker text-balance"
-            style={{ fontFamily: "Stranger Things, sans-serif" }}
-          >
-            CODEZEN
-          </h1>
-          <p className="text-primary mt-2 md:mt-4 text-sm md:text-xl lg:text-2xl animate-pulse">
-            Initializing Portal...
-          </p>
-        </div>
+        {/* Flickering Title */}
+        <motion.h1
+          className="text-6xl md:text-8xl lg:text-9xl font-bold text-red-600 text-glow-red"
+          style={{ fontFamily: "'Benguiat', sans-serif" }}
+          animate={{
+            opacity: [1, 0.8, 1, 0.9, 1],
+          }}
+          transition={{
+            duration: 0.2,
+            repeat: Infinity,
+          }}
+        >
+          CODEZEN
+        </motion.h1>
 
-        {/* Animated grid */}
-        <div className="mb-8 md:mb-12 flex justify-center gap-1 md:gap-2">
-          {[...Array(5)].map((_, i) => (
-            <div
-              key={i}
-              className="w-1.5 md:w-2 h-1.5 md:h-2 rounded-full bg-primary"
-              style={{
-                animation: `pulse-glow 0.8s ease-in-out infinite`,
-                animationDelay: `${i * 0.1}s`,
-              }}
-            />
-          ))}
-        </div>
-
-        {/* Progress bar */}
-        <div className="w-48 md:w-64 h-1 bg-card rounded-full overflow-hidden border border-primary/30 glass-effect mx-auto">
-          <div
-            className="h-full bg-primary transition-all duration-300"
-            style={{
-              width: `${progress}%`,
-              boxShadow: "0 0 15px rgba(220, 20, 60, 0.8)",
-            }}
+        {/* Progress Bar */}
+        <div className="w-64 h-1 bg-gray-800 rounded-full overflow-hidden border border-red-600/50 mx-auto mt-8">
+          <motion.div
+            className="h-full bg-red-600"
+            style={{ boxShadow: "0 0 10px rgba(255, 0, 0, 0.8)" }}
+            initial={{ width: 0 }}
+            animate={{ width: `${progress}%` }}
+            transition={{ duration: 0.5, ease: 'linear' }}
           />
         </div>
-        <p className="text-muted-foreground mt-3 md:mt-4 text-xs md:text-sm">
-          {Math.round(progress)}%
-        </p>
 
-        {/* Flashing text */}
-        <div className="mt-8 md:mt-12 space-y-1 md:space-y-2">
-          <p className="text-primary text-xs md:text-sm animate-pulse">
-            ████ CONNECTING ████
-          </p>
-          <p
-            className="text-accent text-xs md:text-sm animate-pulse"
-            style={{ animationDelay: "0.3s" }}
-          >
-            ██ LOADING DIMENSIONS ██
-          </p>
-          <p
-            className="text-primary text-xs md:text-sm animate-pulse"
-            style={{ animationDelay: "0.6s" }}
-          >
-            ████████ READY ████████
-          </p>
+        {/* Loading Messages */}
+        <div className="mt-6 text-gray-400 text-sm space-y-2 font-mono">
+          <p>ENTERING THE UPSIDE DOWN...</p>
+          <p className="text-red-500 animate-pulse">Reticulating Splines...</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
