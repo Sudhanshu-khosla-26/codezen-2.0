@@ -71,8 +71,8 @@ export default function FooterSection() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-primary" />
-                <Link href="tel:+918448047279" target="_blank">
-                  +91 84480 47279
+                <Link href="tel:+917497066968" target="_blank">
+                  +91 74970 66968
                 </Link>
               </div>
               <div className="flex items-center gap-3">
@@ -153,7 +153,7 @@ export default function FooterSection() {
         {/* Divider */}
         <div className="border-t border-primary/20 pt-6 md:pt-8 text-center">
           <p className="text-xs md:text-sm text-gray-400">
-            © 2025 <span className="text-primary font-semibold">CodeZen 2.0</span>. All rights reserved.
+            © 2026 <span className="text-primary font-semibold">CodeZen 2.0</span>. All rights reserved.
           </p>
           <p className="text-xs md:text-sm text-gray-500 mt-1">
             Organized with ❤️ by{" "}
