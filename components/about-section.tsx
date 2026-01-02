@@ -101,8 +101,10 @@ const AboutSection = () => {
             <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">
               ⚡{" "}
               <span
+
                 className="text-primary"
                 style={{ fontFamily: "Benguiat, sans-serif" }}
+                
               >
                 Why
               </span>{" "}
