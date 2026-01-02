@@ -709,7 +709,7 @@ const teamCategories: TeamCategory[] = [
           ],
         },
         {
-          name: "ISHAAN",
+          name: "ISHAAN SHARMA",
           role: "Web Dev Coordinator ",
           image: "/team/Ishaan Sharma.jpeg",
           bio: "Leading web development initiatives",
