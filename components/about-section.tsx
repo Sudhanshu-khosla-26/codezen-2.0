@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutSection = () => {
   const stats = [
     { number: "7000+", label: "Participants", icon: Users },
-    { number: "₹1Cr+", label: "Prize Pool", icon: Trophy },
+    { number: "₹10 Lakh+", label: "Prize Pool", icon: Trophy },
     { number: "₹65K+", label: "Cash Prizes", icon: Coins },
     { number: "Food", label: "& Accommodation", icon: Utensils },
   ];
@@ -39,7 +39,7 @@ const AboutSection = () => {
               ABOUT
             </span>{" "}
             <span className="text-foreground text-primary" style={{ fontFamily: "Benguiat, sans-serif" }}>
-              CODEZEN
+              CODEZEN 2.0
             </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg">
@@ -76,10 +76,20 @@ const AboutSection = () => {
             whileHover={{ scale: 1.03 }}
           >
             <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">
-              🔥 The Experience
+              🔥{" "}
+              <span
+                className="text-primary"
+                style={{ fontFamily: "Benguiat, sans-serif" }}
+              >
+                The
+              </span>{" "}
+              <span style={{ fontFamily: "Benguiat, sans-serif" }}>
+                Experience
+              </span>
             </h3>
+
             <p className="text-muted-foreground leading-relaxed">
-              CODEZEN 2026 brings together the brightest minds for an intense 36-hour hackathon experience. Network with industry experts, collaborate with passionate developers, and push the boundaries of what's possible.
+              CODEZEN 2.0 brings together the brightest minds for an intense 36-hour hackathon experience. Network with industry experts, collaborate with passionate developers, and push the boundaries of what's possible.
             </p>
           </motion.div>
 
@@ -89,10 +99,23 @@ const AboutSection = () => {
             whileHover={{ scale: 1.03 }}
           >
             <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">
-              ⚡ Why Join?
+              ⚡{" "}
+              <span
+
+                className="text-primary"
+                style={{ fontFamily: "Benguiat, sans-serif" }}
+                
+              >
+                Why
+              </span>{" "}
+              <span style={{ fontFamily: "Benguiat, sans-serif" }}>
+                Join?
+              </span>
             </h3>
+
+
             <p className="text-muted-foreground leading-relaxed">
-              Whether you're a seasoned developer or just starting your journey, CODEZEN offers mentorship, resources, and the platform to turn your wildest ideas into reality. Win prizes, gain recognition, and launch your next big project.
+              Whether you're a seasoned developer or just starting your journey, CODEZEN 2.0 offers mentorship, resources, and the platform to turn your wildest ideas into reality. Win prizes, gain recognition, and launch your next big project.
             </p>
           </motion.div>
         </motion.div>
@@ -116,17 +139,17 @@ const AboutSection = () => {
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="glass-card shine-effect rounded-2xl p-6 sm:p-8 hover-lift flex flex-col items-center">
-              <Image src="/about/college.jpg" alt="Host Logo" width={400} height={200} className="mb-4"/>
+              <Image src="/about/college.jpg" alt="Host Logo" width={400} height={200} className="mb-4" />
               <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">HOSTED BY</h3>
               <p className="text-muted-foreground leading-relaxed text-center">
                 GURU TEGH BAHADUR 4TH CENTENARY ENGINEERING COLLEGE
               </p>
             </div>
             <div className="glass-card shine-effect rounded-2xl p-6 sm:p-8 hover-lift flex flex-col items-center">
-              <Image src="/about/organizer.jpg" alt="Organizer Logo" width={400} height={200} className="mb-4"/>
+              <Image src="/about/organizer.jpg" alt="Organizer Logo" width={400} height={200} className="mb-4" />
               <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">ORGANIZED BY</h3>
               <p className="text-muted-foreground leading-relaxed text-center">
-                CODE-GEEKS TEAM
+                CODEGEEKS TEAM
               </p>
             </div>
           </div>

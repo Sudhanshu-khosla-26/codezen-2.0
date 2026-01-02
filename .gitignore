@@ -1,40 +1,28 @@
+node_modules/
+.next/
+dist/
+out/
 .node_modules 
 node_modules
 /node_modules
 
-# macOS
-.DS_Store
-.localized
-
-# Editors and IDEs
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Build artifacts
-build/
-dist/
-tmp/
-*.log
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+debug.log
 
-# Dependencies
-/node_modules
-
-# dotenv files
+# Environment files
 .env
-.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Testing
-/coverage
+# System files
+.DS_Store
 
-# Misc
-*.iml
-.project
-.classpath
-.c9/
-
-/.next/
+# Build outputs
+coverage/
+.vscode/

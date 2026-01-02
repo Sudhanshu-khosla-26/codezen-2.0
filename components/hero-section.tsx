@@ -16,7 +16,7 @@ const HeroSection = () => {
   ];
 
   const eventDetails = [
-    { icon: Calendar, text: "Feb 28 - Mar 1, 2026" },
+    { icon: Calendar, text: "February 20 - 21, 2026" },
     { icon: Clock, text: "36 Hours" },
     { icon: MapPin, text: "GTB4CEC, Delhi" },
   ];
