@@ -26,5 +26,3 @@ debug.log
 # Build outputs
 coverage/
 .vscode/
-package.json
-package-lock.json
