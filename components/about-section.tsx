@@ -90,6 +90,7 @@ const AboutSection = () => {
 
             <p className="text-muted-foreground leading-relaxed">
               CODEZEN 2.0 brings together the brightest minds for an intense 36-hour hackathon experience. Network with industry experts, collaborate with passionate developers, and push the boundaries of what's possible.
+          
             </p>
           </motion.div>
 
@@ -108,6 +109,7 @@ const AboutSection = () => {
               </span>{" "}
               <span style={{ fontFamily: "Benguiat, sans-serif" }}>
                 Join?
+
               </span>
             </h3>
 
