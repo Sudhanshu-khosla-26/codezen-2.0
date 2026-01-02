@@ -1,11 +1,28 @@
-import { Trophy, Gift, Award } from "lucide-react";
-import { motion } from "framer-motion";
+"use client";
 
-const PrizesSection = () => {
-  const prizes = [
-    { place: "1st Prize", amount: "₹15,000", emoji: "🏆", rank: 1 },
-    { place: "2nd Prize", amount: "₹11,000", emoji: "🥈", rank: 2 },
-    { place: "3rd Prize", amount: "₹7,000", emoji: "🥉", rank: 3 },
+import { Card } from "@/components/ui/card";
+import { Trophy, Medal } from "lucide-react";
+
+export function PrizesSection() {
+  const mainPrizes = [
+    {
+      place: "1st Prize",
+      amount: "₹15,000",
+      icon: Trophy, 
+      color: "text-yellow-400",
+    },
+    {
+      place: "2nd Prize",
+      amount: "₹11,000",
+      icon: Medal, 
+      color: "text-gray-300",
+    },
+    {
+      place: "3rd Prize",
+      amount: "₹7,000",
+      icon: Medal, 
+      color: "text-amber-600",
+    },
   ];
 
   const specialPrizes = [
@@ -32,119 +49,94 @@ const PrizesSection = () => {
     visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
   };
 
+  const cardStyles =
+    "border border-[#ff005c]/40 rounded-3xl backdrop-blur-md text-center transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,0,92,0.7)]";
+
   return (
-    <motion.section
-      id="prizes"
-      className="relative py-20 sm:py-28 px-4"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
-      variants={containerVariants}
-    >
-      <div className="container max-w-6xl mx-auto">
-        <motion.div className="text-center mb-12 sm:mb-16" variants={itemVariants}>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
-            <span className="gradient-text" style={{ fontFamily: "Benguiat, sans-serif" }}>
-              PRIZES
-            </span>{" "}
-            <span className="text-foreground text-primary" style={{ fontFamily: "Benguiat, sans-serif" }}>
-              & REWARDS
-            </span>
-          </h2>
-        </motion.div>
-
-        <motion.div
-          className="flex flex-col md:flex-row justify-center items-end gap-4 sm:gap-6 mb-12 sm:mb-16"
-          variants={containerVariants}
+    <section className="container mx-auto px-4 py-16 md:py-24">
+      <div className="text-center mb-12 md:mb-16">
+        <h2
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-5 text-glow text-balance"
+          style={{ fontFamily: "Stranger Things, sans-serif" }}
         >
-          <motion.div
-            className="prize-card order-2 md:order-1 w-full md:w-64 h-auto md:h-56"
-            variants={itemVariants}
-            whileHover={{ scale: 1.05, y: -10 }}
-          >
-            <div className="glass-card shine-effect rounded-2xl p-6 sm:p-8 text-center h-full hover-lift border-2 border-border/50 hover:border-primary/50 transition-all duration-300">
-              <div className="text-4xl sm:text-5xl mb-3">{prizes[1].emoji}</div>
-              <div className="text-xl sm:text-2xl font-bold text-foreground mb-2">{prizes[1].place}</div>
-              <div className="text-2xl sm:text-3xl font-black gradient-text">{prizes[1].amount}</div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="prize-card order-1 md:order-2 w-full md:w-72 h-auto md:h-72"
-            variants={itemVariants}
-            whileHover={{ scale: 1.05, y: -10, boxShadow: "0 0 30px rgba(220, 20, 60, 0.6)" }}
-          >
-            <div className="glass-card shine-effect rounded-2xl p-6 sm:p-10 text-center h-full hover-lift border-2 border-primary/50 blood-glow relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10"></div>
-              <div className="relative z-10">
-                <div className="text-5xl sm:text-6xl mb-4">{prizes[0].emoji}</div>
-                <div className="text-2xl sm:text-3xl font-bold text-foreground mb-2">{prizes[0].place}</div>
-                <div className="text-3xl sm:text-4xl font-black gradient-text">{prizes[0].amount}</div>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="prize-card order-3 w-full md:w-64 h-auto md:h-48"
-            variants={itemVariants}
-            whileHover={{ scale: 1.05, y: -10 }}
-          >
-            <div className="glass-card shine-effect rounded-2xl p-6 text-center h-full hover-lift border-2 border-border/50 hover:border-primary/50 transition-all duration-300">
-              <div className="text-4xl sm:text-5xl mb-3">{prizes[2].emoji}</div>
-              <div className="text-xl sm:text-2xl font-bold text-foreground mb-2">{prizes[2].place}</div>
-              <div className="text-2xl sm:text-3xl font-black gradient-text">{prizes[2].amount}</div>
-            </div>
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16 max-w-2xl mx-auto"
-          variants={containerVariants}
-        >
-          {specialPrizes.map((prize, index) => (
-            <motion.div
-              key={index}
-              className="glass-card shine-effect rounded-xl p-5 sm:p-6 text-center hover-lift group"
-              variants={itemVariants}
-              whileHover={{ scale: 1.05 }}
-            >
-              <div className="flex items-center justify-center gap-3 mb-2">
-                <Award className="h-5 w-5 text-primary group-hover:text-accent transition-colors" />
-              </div>
-              <div className="text-base sm:text-lg font-bold text-foreground mb-1">{prize.category}</div>
-              <div className="text-xl sm:text-2xl font-black gradient-text">{prize.amount}</div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        <motion.div
-          className="glass-card stat-card shine-effect rounded-2xl p-6 sm:p-8"
-          variants={itemVariants}
-        >
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <h3 className="text-xl sm:text-2xl font-bold text-foreground">Additional Rewards</h3>
-          </div>
-          <motion.div
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4"
-            variants={containerVariants}
-          >
-            {rewards.map((reward, index) => (
-              <motion.div
-                key={index}
-                className="flex items-start gap-3 p-3 sm:p-4 rounded-xl bg-secondary/30 hover:bg-secondary/50 transition-colors group"
-                variants={itemVariants}
-                whileHover={{ scale: 1.03 }}
-              >
-                <span className="text-lg sm:text-xl shrink-0">{reward.emoji}</span>
-                <span className="text-sm sm:text-base text-muted-foreground group-hover:text-foreground transition-colors">
-                  {reward.text}
-                </span>
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
+          PRIZE BREAKDOWN
+        </h2>
+        <p className="text-sm md:text-base text-muted-foreground">
+          Amazing rewards await the brightest innovators at CodeZen 2.0 ✨
+        </p>
       </div>
-    </motion.section>
+
+      {/* Main Prizes */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 max-w-5xl mx-auto mb-16">
+        {mainPrizes.map((prize, i) => (
+          <Card
+            key={i}
+            className={`glass-effect p-6 md:p-8 text-center border-primary/30 hover-glow-intense transition-all duration-300 animate-slide-in-up ${
+              i === 0 ? "scale-105 blood-glow" : ""
+            }`}
+            style={{ animationDelay: `${i * 0.1}s` }}
+          >
+            <prize.icon
+              className={`h-12 md:h-16 w-12 md:w-16 mx-auto mb-3 ${prize.color}`}
+            />
+            <h3 className="text-lg md:text-2xl font-bold text-white">
+              {prize.place}
+            </h3>
+            <p className="text-2xl md:text-4xl font-bold text-primary mt-2">
+              {prize.amount}
+            </p>
+          </Card>
+        ))}
+      </div>
+
+      {/* Special Prizes */}
+      <div className="max-w-3xl mx-auto mb-16">
+        <h3 className="text-2xl md:text-3xl font-bold text-center text-primary mb-8">
+          Special Prizes
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {specialPrizes.map((prize, i) => (
+            <Card
+              key={i}
+              className="glass-effect p-5 md:p-6 border-primary/30 text-center hover-glow-intense transition-all animate-scale-in"
+              style={{ animationDelay: `${i * 0.1}s` }}
+            >
+              <h4 className="text-lg md:text-xl font-semibold text-white">
+                {prize.category}
+              </h4>
+              <p className="text-xl md:text-2xl font-bold text-primary mt-2">
+                {prize.amount}
+              </p>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      {/* Other Rewards */}
+      <div className="max-w-4xl mx-auto">
+        <h3 className="text-2xl md:text-3xl font-bold text-center text-primary mb-8">
+          Other Exciting Rewards
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+          {rewards.map((reward, i) => (
+            <Card
+              key={i}
+              className="glass-effect border-primary/30 p-4 md:p-5 text-center text-white text-sm md:text-base font-medium hover-glow-intense animate-slide-in-up"
+              style={{ animationDelay: `${i * 0.07}s` }}
+            >
+              <span>{reward.emoji} {reward.text}</span>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      {/* Footer Text */}
+      <div className="text-center mt-16">
+        <p className="text-sm md:text-base text-muted-foreground">
+          Prizes, goodies, and opportunities that make every hour of CodeZen 2.0 worth it 🚀
+        </p>
+      </div>
+    </section>
   );
 };
 
