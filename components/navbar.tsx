@@ -102,9 +102,7 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
-            ? "glass-effect "
-            : "backdrop-blur-sm "
+          isScrolled ? "glass-effect " : "backdrop-blur-sm "
         }`}
       >
         <div className="container mx-auto px-4 h-18 flex items-center justify-center">
@@ -118,7 +116,7 @@ const Navbar = () => {
                       : "text-foreground hover:text-primary"
                   }`}
                   style={{ fontFamily: "Benguiat, sans-serif" }}
-                  whileHover={{ y: -2, color: 'rgb(220, 20, 60)' }}
+                  whileHover={{ y: -2, color: "rgb(220, 20, 60)" }}
                   onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.name}
@@ -137,13 +135,19 @@ const Navbar = () => {
               </Link>
             ))}
 
-            <Link href="https://www.namespace.world/events/AFYYA7?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnlueXbe9hiF1Tp1uY-MC62l15C19FuV9UMMLWrfH3_mjaKHaR-1IAoL0xsdI_aem_WGWwQcUVmP7K0gSJwgXHUw" passHref>
+            <Link
+              href="https://www.namespace.world/events/AFYYA7?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnlueXbe9hiF1Tp1uY-MC62l15C19FuV9UMMLWrfH3_mjaKHaR-1IAoL0xsdI_aem_WGWwQcUVmP7K0gSJwgXHUw"
+              passHref
+            >
               <motion.a
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-4 px-6 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 font-squids tracking-wide text-white bg-red-600 hover:bg-red-700 shadow-lg"
                 style={{ fontFamily: "Benguiat, sans-serif" }}
-                whileHover={{ y: -2, boxShadow: "0px 10px 20px rgba(255, 0, 0, 0.5)" }}
+                whileHover={{
+                  y: -2,
+                  boxShadow: "0px 10px 20px rgba(255, 0, 0, 0.5)",
+                }}
               >
                 REGISTER
               </motion.a>
@@ -194,7 +198,10 @@ const Navbar = () => {
                   </Link>
                 ))}
 
-                <Link href="https://www.namespace.world/events/AFYYA7?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnlueXbe9hiF1Tp1uY-MC62l15C19FuV9UMMLWrfH3_mjaKHaR-1IAoL0xsdI_aem_WGWwQcUVmP7K0gSJwgXHUw" passHref>
+                <Link
+                  href="https://www.namespace.world/events/AFYYA7?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnlueXbe9hiF1Tp1uY-MC62l15C19FuV9UMMLWrfH3_mjaKHaR-1IAoL0xsdI_aem_WGWwQcUVmP7K0gSJwgXHUw"
+                  passHref
+                >
                   <motion.a
                     target="_blank"
                     rel="noopener noreferrer"

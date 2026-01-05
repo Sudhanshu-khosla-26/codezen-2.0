@@ -1,6 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Users, Rocket, Calendar, Clock, MapPin, Trophy, MessageCircle, ChevronDown } from "lucide-react";
+import {
+  Users,
+  Rocket,
+  Calendar,
+  Clock,
+  MapPin,
+  Trophy,
+  MessageCircle,
+  ChevronDown,
+} from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -10,9 +19,19 @@ const HeroSection = () => {
   };
 
   const stats = [
-    { icon: Users, value: "10,000+ Participants", label: "", sublabel: "From across India" },
+    {
+      icon: Users,
+      value: "10,000+ Participants",
+      label: "",
+      sublabel: "From across India",
+    },
     { icon: Trophy, value: "10,00,000+", label: "", sublabel: "In Prizes" },
-    { icon: MessageCircle, value: "JOIN WHATSAPP", label: "", sublabel: "Connect with Teams" },
+    {
+      icon: MessageCircle,
+      value: "JOIN WHATSAPP",
+      label: "",
+      sublabel: "Connect with Teams",
+    },
   ];
 
   const eventDetails = [
@@ -43,13 +62,12 @@ const HeroSection = () => {
     >
       <div className="container max-w-5xl mx-auto mt-2">
         <div className="text-center space-y-8 md:space-y-4 mb-3">
-
           <motion.div variants={itemVariants}>
             <Badge
               variant="outline"
               className="glass-card px-4 py-2 glass-effect blood-glow text-xs sm:text-sm font-medium tracking-wide border-primary/30 text-muted-foreground"
             >
-              ⚡ Welcome to the Upside Down of Coding
+              Welcome to the Upside Down of Coding
             </Badge>
           </motion.div>
 
@@ -63,7 +81,7 @@ const HeroSection = () => {
               >
                 CODEZEN
               </motion.span>
-              <br className="md:hidden"/>
+              <br className="md:hidden" />
               <span
                 className="text-foreground text-8xl ml-2 sm:ml-4 text-glow"
                 style={{ fontFamily: "Benguiat, sans-serif" }}
@@ -80,8 +98,8 @@ const HeroSection = () => {
             className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
-            Join us for an exciting journey of coding, innovation, and creativity.
-            Build something extraordinary in the Upside Down.
+            Join us for an exciting journey of coding, innovation, and
+            creativity. Build something extraordinary in the Upside Down.
           </motion.p>
 
           <motion.div
@@ -92,7 +110,10 @@ const HeroSection = () => {
               <motion.div
                 key={index}
                 className="flex p-1 px-4 rounded-full glass-card glass-effect hover-lift items-center gap-2 text-muted-foreground shine-effect"
-                whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(220, 20, 60, 0.5)" }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 0 15px rgba(220, 20, 60, 0.5)",
+                }}
               >
                 <detail.icon className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                 <span>{detail.text}</span>
@@ -150,7 +171,9 @@ const HeroSection = () => {
               onClick={() => scrollToSection("about")}
               className="inline-flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
-              <span className="text-xs tracking-widest uppercase">Scroll Down</span>
+              <span className="text-xs tracking-widest uppercase">
+                Scroll Down
+              </span>
               <ChevronDown className="h-5 w-5 animate-bounce" />
             </button>
           </motion.div>

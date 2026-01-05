@@ -35,7 +35,7 @@ export default function CodeZenPage() {
 
       {/* Floating particles effect */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(500)].map((_, i) => {
+        {[...Array(600)].map((_, i) => {
           const size = Math.random() * 4 + 0.5;
           const duration = 8 + Math.random() * 15;
           const delay = Math.random() * 8;
@@ -81,7 +81,7 @@ export default function CodeZenPage() {
         </div>
         {/* <EventDetails /> */}
         {/* <StatsSection /> */}
-      
+
         <div id="tracks">
           <TracksSection />
         </div>

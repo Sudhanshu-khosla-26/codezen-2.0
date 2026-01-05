@@ -190,7 +190,7 @@
 
 .hover-lift:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(220, 20, 60, 0.3);
+  box-shadow: 0 20px 40px rgba(187, 3, 3, 0.3);
 }
 
 .hover-scale-bright {
@@ -207,8 +207,8 @@
 }
 
 .hover-glow-intense:hover {
-  box-shadow: 0 0 40px rgba(220, 20, 60, 0.8), 0 0 80px rgba(220, 20, 60, 0.6);
-  border-color: rgba(220, 20, 60, 0.6);
+  box-shadow: 0 0 20px rgba(220, 20, 20, 0.8), 0 0 80px rgba(220, 20, 20, 0.6);
+  border-color: rgba(220, 20, 20, 0.6);
 }
 
 /* Animations */
@@ -399,8 +399,7 @@
 }
 
 .stat-card:hover {
-  box-shadow:
-    0 0 20px oklch(0.45 0.22 25 / 0.55),
+  box-shadow: 0 0 20px oklch(0.45 0.22 25 / 0.55),
     inset 0 0 12px oklch(0.45 0.22 25 / 0.25);
   border-color: var(--primary);
 }
@@ -416,13 +415,18 @@
 }
 
 .shine-effect::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 200%;
   height: 100%;
-  background: linear-gradient(110deg, transparent 20%, rgba(255, 255, 255, 0.2) 50%, transparent 80%);
+  background: linear-gradient(
+    110deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 80%
+  );
   animation: shimmer 3s infinite;
 }
 

@@ -29,13 +29,19 @@ export default function FooterSection() {
           </div>
 
           {/* Quick Links */}
-          <div className="animate-slide-in-up" style={{ animationDelay: "0.1s" }}>
+          <div
+            className="animate-slide-in-up"
+            style={{ animationDelay: "0.1s" }}
+          >
             <h4 className="font-bold text-white mb-4 text-sm md:text-base">
               Quick Links
             </h4>
             <ul className="space-y-2 text-xs md:text-sm text-gray-400">
               <li>
-                <a href="#tracks" className="hover:text-primary transition-colors">
+                <a
+                  href="#tracks"
+                  className="hover:text-primary transition-colors"
+                >
                   Tracks
                 </a>
               </li>
@@ -45,12 +51,18 @@ export default function FooterSection() {
                 </a>
               </li>
               <li>
-                <a href="#prizes" className="hover:text-primary transition-colors">
+                <a
+                  href="#prizes"
+                  className="hover:text-primary transition-colors"
+                >
                   Prizes
                 </a>
               </li>
               <li>
-                <a href="#team" className="hover:text-primary transition-colors">
+                <a
+                  href="#team"
+                  className="hover:text-primary transition-colors"
+                >
                   Team
                 </a>
               </li>
@@ -58,14 +70,20 @@ export default function FooterSection() {
           </div>
 
           {/* Contact Info */}
-          <div className="animate-slide-in-up" style={{ animationDelay: "0.15s" }}>
+          <div
+            className="animate-slide-in-up"
+            style={{ animationDelay: "0.15s" }}
+          >
             <h4 className="font-bold text-white mb-4 text-sm md:text-base">
               Contact Us
             </h4>
             <div className="space-y-3 text-xs md:text-sm text-gray-400">
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-primary" />
-                <Link href="mailto:business.codegeeks@gmail.com" target="_blank">
+                <Link
+                  href="mailto:business.codegeeks@gmail.com"
+                  target="_blank"
+                >
                   business.codegeeks@gmail.com
                 </Link>
               </div>
@@ -88,14 +106,17 @@ export default function FooterSection() {
           </div>
 
           {/* Social Links */}
-          <div className="animate-slide-in-up" style={{ animationDelay: "0.2s" }}>
+          <div
+            className="animate-slide-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             <h4 className="font-bold text-white mb-4 text-sm md:text-base">
               Connect With Us
             </h4>
             <div className="flex flex-wrap gap-3 md:gap-4">
               {/* WhatsApp */}
               <Link
-                href="https://chat.whatsapp.com/G028i6VGhcyEiy0OAii6lX"
+                href="https://chat.whatsapp.com/FeUJp4ispJNGTt5tpu5Qbb"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -153,7 +174,9 @@ export default function FooterSection() {
         {/* Divider */}
         <div className="border-t border-primary/20 pt-6 md:pt-8 text-center">
           <p className="text-xs md:text-sm text-gray-400">
-            © 2026 <span className="text-primary font-semibold">CodeZen 2.0</span>. All rights reserved.
+            © 2026{" "}
+            <span className="text-primary font-semibold">CodeZen 2.0</span>. All
+            rights reserved.
           </p>
           <p className="text-xs md:text-sm text-gray-500 mt-1">
             Organized with ❤️ by{" "}
