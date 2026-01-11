@@ -176,17 +176,17 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
-      --color-red-50: lab(96.5005% 4.18508 1.52328);
-      --color-red-300: lab(76.5514% 36.422 15.5335);
-      --color-red-400: lab(63.7053% 60.745 31.3109);
+      --color-red-50: lab(96.5005% 4.18511 1.52329);
+      --color-red-300: lab(76.5514% 36.4219 15.5335);
+      --color-red-400: lab(63.7053% 60.7449 31.3109);
       --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
       --color-red-700: lab(40.4273% 67.2623 53.7441);
-      --color-gray-400: lab(65.9269% -.832707 -8.17473);
-      --color-gray-500: lab(47.7841% -.393182 -10.0268);
+      --color-gray-400: lab(65.9269% -.832707 -8.17474);
+      --color-gray-500: lab(47.7841% -.393212 -10.0268);
       --color-gray-600: lab(35.6337% -1.58697 -10.8425);
       --color-gray-800: lab(16.1051% -1.18239 -11.7533);
-      --color-neutral-300: lab(84.92% 0 -.0000119209);
+      --color-neutral-300: lab(84.92% 0 0);
     }
   }
 }
@@ -830,6 +830,10 @@
     margin-bottom: calc(var(--spacing) * 4);
   }
 
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -1073,6 +1077,10 @@
     height: calc(var(--spacing) * 28);
   }
 
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
@@ -1231,6 +1239,10 @@
 
   .w-28 {
     width: calc(var(--spacing) * 28);
+  }
+
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
 
   .w-64 {
@@ -1876,12 +1888,12 @@
 
   .border-\[\#ff005c\]\/40 {
     border-color: #ff005c66;
-    border-color: lab(54.9672% 82.3289 26.6742 / .4);
+    border-color: lab(54.9672% 82.3289 26.6743 / .4);
   }
 
   .border-\[\#ff005c\]\/70 {
     border-color: #ff005cb3;
-    border-color: lab(54.9672% 82.3289 26.6742 / .7);
+    border-color: lab(54.9672% 82.3289 26.6743 / .7);
   }
 
   .border-border {
@@ -3549,6 +3561,12 @@
   @media (hover: hover) {
     .hover\:bg-accent:hover {
       background-color: var(--accent);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-black:hover {
+      background-color: var(--color-black);
     }
   }
 
@@ -5624,6 +5642,13 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:text-xs {
       font-size: var(--text-xs);
       line-height: var(--tw-leading, var(--text-xs--line-height));
@@ -6641,21 +6666,21 @@
 @supports (color: lab(0% 0 0)) {
   :root {
     --background: lab(.433607% 1.05192 .410274);
-    --foreground: lab(94.1173% 2.92003 1.93764);
+    --foreground: lab(94.1173% 2.92003 1.93763);
     --card: lab(1.46342% 3.55022 1.38467);
-    --card-foreground: lab(94.1173% 2.92003 1.93764);
+    --card-foreground: lab(94.1173% 2.92003 1.93763);
     --popover: lab(.858614% 1.59965 .664699);
-    --popover-foreground: lab(94.1173% 2.92003 1.93764);
+    --popover-foreground: lab(94.1173% 2.92003 1.93763);
     --primary: lab(33.8858% 70.2525 54.0093);
-    --primary-foreground: lab(97.5973% 2.91976 1.93745);
+    --primary-foreground: lab(97.5973% 2.91979 1.93744);
     --secondary: lab(4.97718% 10.4922 4.23867);
-    --secondary-foreground: lab(94.1173% 2.92003 1.93764);
+    --secondary-foreground: lab(94.1173% 2.92003 1.93763);
     --muted: lab(2.89782% 5.39882 2.24336);
-    --muted-foreground: lab(53.4327% 5.87362 3.90549);
-    --accent: lab(39.3629% 79.8792 64.7202);
-    --accent-foreground: lab(97.5973% 2.91976 1.93745);
+    --muted-foreground: lab(53.4327% 5.87362 3.90546);
+    --accent: lab(39.3629% 79.8793 64.7202);
+    --accent-foreground: lab(97.5973% 2.91979 1.93744);
     --destructive: lab(33.8858% 70.2525 54.0093);
-    --destructive-foreground: lab(97.5973% 2.91976 1.93745);
+    --destructive-foreground: lab(97.5973% 2.91979 1.93744);
     --border: lab(6.86891% 12.2578 5.3176);
     --input: lab(6.86891% 12.2578 5.3176);
     --ring: lab(33.8858% 70.2525 54.0093);
@@ -6663,13 +6688,13 @@
     --chart-2: lab(17.2177% 47.9276 29.006);
     --chart-3: lab(45.7636% 63.3818 40.1799);
     --chart-4: lab(28.5252% 57.3552 40.6532);
-    --chart-5: lab(39.3629% 79.8792 64.7202);
+    --chart-5: lab(39.3629% 79.8793 64.7202);
     --sidebar: lab(.858614% 1.59965 .664699);
-    --sidebar-foreground: lab(94.1173% 2.92003 1.93764);
+    --sidebar-foreground: lab(94.1173% 2.92003 1.93763);
     --sidebar-primary: lab(33.8858% 70.2525 54.0093);
-    --sidebar-primary-foreground: lab(97.5973% 2.91976 1.93745);
+    --sidebar-primary-foreground: lab(97.5973% 2.91979 1.93744);
     --sidebar-accent: lab(4.97718% 10.4922 4.23867);
-    --sidebar-accent-foreground: lab(94.1173% 2.92003 1.93764);
+    --sidebar-accent-foreground: lab(94.1173% 2.92003 1.93763);
     --sidebar-border: lab(6.86891% 12.2578 5.3176);
     --sidebar-ring: lab(33.8858% 70.2525 54.0093);
   }
@@ -6713,21 +6738,21 @@
 @supports (color: lab(0% 0 0)) {
   .dark {
     --background: lab(.433607% 1.05192 .410274);
-    --foreground: lab(94.1173% 2.92003 1.93764);
+    --foreground: lab(94.1173% 2.92003 1.93763);
     --card: lab(1.46342% 3.55022 1.38467);
-    --card-foreground: lab(94.1173% 2.92003 1.93764);
+    --card-foreground: lab(94.1173% 2.92003 1.93763);
     --popover: lab(.858614% 1.59965 .664699);
-    --popover-foreground: lab(94.1173% 2.92003 1.93764);
+    --popover-foreground: lab(94.1173% 2.92003 1.93763);
     --primary: lab(33.8858% 70.2525 54.0093);
-    --primary-foreground: lab(97.5973% 2.91976 1.93745);
+    --primary-foreground: lab(97.5973% 2.91979 1.93744);
     --secondary: lab(4.97718% 10.4922 4.23867);
-    --secondary-foreground: lab(94.1173% 2.92003 1.93764);
+    --secondary-foreground: lab(94.1173% 2.92003 1.93763);
     --muted: lab(2.89782% 5.39882 2.24336);
-    --muted-foreground: lab(53.4327% 5.87362 3.90549);
-    --accent: lab(39.3629% 79.8792 64.7202);
-    --accent-foreground: lab(97.5973% 2.91976 1.93745);
+    --muted-foreground: lab(53.4327% 5.87362 3.90546);
+    --accent: lab(39.3629% 79.8793 64.7202);
+    --accent-foreground: lab(97.5973% 2.91979 1.93744);
     --destructive: lab(33.8858% 70.2525 54.0093);
-    --destructive-foreground: lab(97.5973% 2.91976 1.93745);
+    --destructive-foreground: lab(97.5973% 2.91979 1.93744);
     --border: lab(6.86891% 12.2578 5.3176);
     --input: lab(6.86891% 12.2578 5.3176);
     --ring: lab(33.8858% 70.2525 54.0093);
@@ -6735,13 +6760,13 @@
     --chart-2: lab(17.2177% 47.9276 29.006);
     --chart-3: lab(45.7636% 63.3818 40.1799);
     --chart-4: lab(28.5252% 57.3552 40.6532);
-    --chart-5: lab(39.3629% 79.8792 64.7202);
+    --chart-5: lab(39.3629% 79.8793 64.7202);
     --sidebar: lab(.858614% 1.59965 .664699);
-    --sidebar-foreground: lab(94.1173% 2.92003 1.93764);
+    --sidebar-foreground: lab(94.1173% 2.92003 1.93763);
     --sidebar-primary: lab(33.8858% 70.2525 54.0093);
-    --sidebar-primary-foreground: lab(97.5973% 2.91976 1.93745);
+    --sidebar-primary-foreground: lab(97.5973% 2.91979 1.93744);
     --sidebar-accent: lab(4.97718% 10.4922 4.23867);
-    --sidebar-accent-foreground: lab(94.1173% 2.92003 1.93764);
+    --sidebar-accent-foreground: lab(94.1173% 2.92003 1.93763);
     --sidebar-border: lab(6.86891% 12.2578 5.3176);
     --sidebar-ring: lab(33.8858% 70.2525 54.0093);
   }
@@ -6794,7 +6819,7 @@
 
 .hover-lift:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px #dc143c4d;
+  box-shadow: 0 20px 40px #bb03034d;
 }
 
 .hover-scale-bright {
@@ -6811,8 +6836,8 @@
 }
 
 .hover-glow-intense:hover {
-  border-color: #dc143c99;
-  box-shadow: 0 0 40px #dc143ccc, 0 0 80px #dc143c99;
+  border-color: #dc141499;
+  box-shadow: 0 0 20px #dc1414cc, 0 0 80px #dc141499;
 }
 
 @keyframes float {
@@ -6991,7 +7016,7 @@
 .stat-card:before {
   content: "";
   background: linear-gradient(120deg, #0000 20%, #ef002840, #0000 80%);
-  background: linear-gradient(120deg, #0000 20%, lab(50.4355% 95.8552 81.52 / .25), #0000 80%);
+  background: linear-gradient(120deg, #0000 20%, lab(50.4355% 95.8551 81.52 / .25), #0000 80%);
   transition: transform .8s;
   position: absolute;
   inset: 0;
