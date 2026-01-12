@@ -21,7 +21,7 @@ const HeroSection = () => {
   const stats = [
     {
       icon: Users,
-      value: "10,000+ Participants",
+      value: "7,000+ Participants",
       label: "",
       sublabel: "From across India",
     },
