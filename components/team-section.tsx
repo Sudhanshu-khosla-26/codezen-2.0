@@ -2114,7 +2114,7 @@ export default function TeamSection() {
     <section id="team" className="container mx-auto px-4 py-20 text-center">
       <div className="text-center mb-16">
         <h2
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 flicker"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 "
           style={{ fontFamily: "Benguiat, sans-serif" }}
         >
           OUR
